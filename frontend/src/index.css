@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.unbounded {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 816;
+  font-style: normal;
+}
+
+
+.hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+
+.shiny-border {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #c0c0c0,
+    #a9a9a9,
+    #d3d3d3,
+    #ffffff
+  );
+  background-size: 300% 100%;
+  animation: shineBorder 2s linear infinite;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+
+  /* Rounded bottom corners */
+  border-radius: 0 0 10px 10px;
+
+  /* Fading effect on sides */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 40%, black 90deg, transparent);
+  mask-image: linear-gradient(to right, transparent, black 40%, black 50%, transparent);
+ 
+}
+
+@keyframes shineBorder {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 300% 0%;
+  }
+}
+
