@@ -160,7 +160,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden border-t border-white/10">
+        <footer className="bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-hidden border-t border-white/10">
             {/* Decorative elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full opacity-5">
@@ -192,16 +192,16 @@ const Footer = () => {
                             </p>
 
                             {/* Certifications */}
-                            <div className="flex gap-4 pt-2">
+                            <div className="md:flex-col gap-4 pt-2 hidden md:flex">
                                 <img
                                     alt="Startup India"
                                     src={Startupindia}
-                                    className="w-16 h-auto opacity-80 hover:opacity-100 transition-opacity hover:transform hover:scale-105"
+                                    className="w-40 h-auto opacity-80 hover:opacity-100 transition-opacity hover:transform hover:scale-105"
                                 />
                                 <img
                                     alt="MSME"
                                     src={MSME}
-                                    className="w-16 h-auto opacity-80 hover:opacity-100 transition-opacity hover:transform hover:scale-105"
+                                    className="w-40 h-auto opacity-80 hover:opacity-100 transition-opacity hover:transform hover:scale-105 "
                                 />
                             </div>
                         </div>
@@ -209,7 +209,7 @@ const Footer = () => {
                         {/* Services Dropdown */}
                         <div className="space-y-4">
                             <h3 className="text-lg font-semibold text-white mb-3 relative inline-block">
-                                <span className="relative z-10 text-xl unbounded">Our Services</span>
+                                <span className="relative z-10 text-[15px] unbounded">Our Services</span>
                                 <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
                             </h3>
                             <div className="space-y-3">
@@ -252,7 +252,7 @@ const Footer = () => {
                         {/* Quick Links */}
                         <div className="space-y-4">
                             <h3 className="text-lg font-semibold text-white mb-3 relative inline-block">
-                                <span className="relative z-10 text-xl unbounded">Quick Links</span>
+                                <span className="relative z-10 text-[15px] unbounded">Quick Links</span>
                                 <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
                             </h3>
                             <div className="space-y-2">
@@ -274,7 +274,7 @@ const Footer = () => {
                         {/* Contact Info */}
                         <div className="space-y-4">
                             <h3 className="text-lg font-semibold text-white mb-3 relative inline-block">
-                                <span className="relative z-10 text-xl unbounded">Contact Us</span>
+                                <span className="relative z-10 text-[15px] unbounded">Contact Us</span>
                                 <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
                             </h3>
 
@@ -290,25 +290,34 @@ const Footer = () => {
                                 </div>
 
                                 {/* Email */}
-                                <div className="flex flex-col gap-2">
-                                    <div
+                                <div className="flex flex-col gap-4">
+                                    <a
                                         href="mailto:sales@infinoid.com"
-                                        className="flex items-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
+                                        aria-label="Email sales at infinoid.com"
+                                        className="flex items-center gap-4 p-4 min-h-[48px] min-w-[48px] rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
                                     >
-                                        <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-md flex items-center justify-center">
-                                            <FaEnvelope className="text-white text-sm" />
+                                        <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-md flex items-center justify-center">
+                                            <FaEnvelope className="text-white text-base" />
                                         </div>
-                                        <div className="flex flex-col justify-center items-center">
-                                            <a href="mailto:sales@infinoid.com" className="text-sm text-gray-300 hover:text-white transition-colors duration-300">
-                                                sales@infinoid.com
-                                            </a>
-                                            <a href="mailto:info@infinoid.com" className="text-sm text-gray-300 hover:text-white transition-colors duration-300">
-                                                info@infinoid.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                        <span className="text-base text-gray-200 hover:text-white leading-relaxed">
+                                            sales@infinoid.com
+                                        </span>
+                                    </a>
 
+                                    <a
+                                        href="mailto:info@infinoid.com"
+                                        aria-label="Email info at infinoid.com"
+                                        className="flex items-center gap-4 p-4 min-h-[48px] min-w-[48px] rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                    >
+                                        <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-md flex items-center justify-center">
+                                            <FaEnvelope className="text-white text-base" />
+                                        </div>
+                                        <span className="text-base text-gray-200 hover:text-white leading-relaxed">
+                                            info@infinoid.com
+                                        </span>
+                                    </a>
+                                </div>
+                                
                                 {/* Phone */}
                                 <div className="flex flex-col gap-2">
                                     <div className="flex items-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
@@ -328,17 +337,22 @@ const Footer = () => {
                                         href="https://www.linkedin.com/company/infinoid-technologies/?viewAsMember=true"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="Visit Infinoid Technologies on LinkedIn"
+                                        title="LinkedIn - Infinoid Technologies"
                                         className="w-9 h-9 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                                     >
-                                        <FaLinkedin className="text-white text-sm" />
+                                        <FaLinkedin className="text-white text-sm" aria-hidden="true" />
                                     </a>
+
                                     <a
                                         href="https://x.com/infinoid_tech"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="Follow Infinoid Technologies on Twitter (X)"
+                                        title="Twitter - Infinoid Technologies"
                                         className="w-9 h-9 bg-gradient-to-r from-sky-500 to-sky-600 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                                     >
-                                        <FaTwitter className="text-white text-sm" />
+                                        <FaTwitter className="text-white text-sm" aria-hidden="true" />
                                     </a>
                                 </div>
                             </div>
@@ -354,11 +368,18 @@ const Footer = () => {
                             </p>
 
                             {/* Additional Links */}
-                            <div className="flex items-center gap-5 text-xs">
-                                <a href="/Privacy Policy" className="text-gray-400 hover:text-blue-300 transition-colors">Privacy Policy</a>
-                                <a href="/cookies" className="text-gray-400 hover:text-blue-300 transition-colors">Cookies</a>
-                                <a href="/sitemap" className="text-gray-400 hover:text-blue-300 transition-colors">Sitemap</a>
-                            </div>
+                            <nav
+                                aria-label="Footer navigation"
+                                className="flex items-center gap-5 text-xs"
+                            >
+                                <a
+                                    href="/privacy-policy"
+                                    title="Read our Privacy Policy"
+                                    className="text-gray-400 hover:text-blue-300 transition-colors"
+                                >
+                                    Privacy Policy
+                                </a>
+                            </nav>
                         </div>
                     </div>
                 </div>
