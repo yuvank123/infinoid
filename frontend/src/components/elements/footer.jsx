@@ -208,10 +208,10 @@ const Footer = () => {
 
                         {/* Services Dropdown */}
                         <div className="space-y-4">
-                            <h3 className="text-lg font-semibold text-white mb-3 relative inline-block">
+                            <h2 className="text-lg font-semibold text-white mb-3 relative inline-block">
                                 <span className="relative z-10 text-[15px] unbounded">Our Services</span>
                                 <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
-                            </h3>
+                            </h2>
                             <div className="space-y-3">
                                 {serviceCategories.map((category, index) => (
                                     <div key={index} className="relative">
@@ -251,10 +251,10 @@ const Footer = () => {
 
                         {/* Quick Links */}
                         <div className="space-y-4">
-                            <h3 className="text-lg font-semibold text-white mb-3 relative inline-block">
+                            <h2 className="text-lg font-semibold text-white mb-3 relative inline-block">
                                 <span className="relative z-10 text-[15px] unbounded">Quick Links</span>
                                 <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
-                            </h3>
+                            </h2>
                             <div className="space-y-2">
                                 {quickLinks.map((link, index) => (
                                     <a
@@ -273,10 +273,10 @@ const Footer = () => {
 
                         {/* Contact Info */}
                         <div className="space-y-4">
-                            <h3 className="text-lg font-semibold text-white mb-3 relative inline-block">
+                            <h2 className="text-lg font-semibold text-white mb-3 relative inline-block">
                                 <span className="relative z-10 text-[15px] unbounded">Contact Us</span>
                                 <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
-                            </h3>
+                            </h2>
 
                             <div className="space-y-4">
                                 {/* Address */}
