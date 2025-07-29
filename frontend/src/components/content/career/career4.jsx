@@ -13,7 +13,7 @@ const ContactUs = () => {
         {/* Right Section - Contact Info */}
         <div className="lg:w-1/2 space-y-8">
           <div className="backdrop-blur-xl bg-gradient-to-br from-blue-900/20 p-8 rounded-3xl border border-white/10 shadow-2xl">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent mb-8 unbounded">
+            <h2 className="text-4xl bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent mb-8 lato-900">
               Connect Directly
             </h2>
 
@@ -46,7 +46,7 @@ const ContactUs = () => {
                   <FiMapPin className="text-2xl text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-purple-200 mb-2">Locations</h3>
+                  <h3 className="text-lg font-semibold text-purple-200 mb-2">Regd Office</h3>
                   <p className="text-gray-300">Unit No. C-101, Exotica East Square, Ghaziabad – 201014</p>
                 </div>
               </div>

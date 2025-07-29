@@ -3,13 +3,83 @@ import { FiUserCheck, FiLock, FiBarChart2, FiDatabase, FiSmartphone } from 'reac
 import OverviewImg1 from '../../../../../../public/images/crm1.png';
 import OverviewImg2 from '../../../../../../public/images/crm2.png'; // Update with your CRM image path
 
+const stack = [
+  {
+    title: "Lead Management",
+    icon: FiUserCheck,
+    items: [
+      "Lead Capture & Assignment",
+      "Source Tracking",
+      "Lead Scoring",
+      "Pipeline Stages",
+      "Follow-Up Reminders"
+    ]
+  },
+  {
+    title: "Data & Contact Storage",
+    icon: FiDatabase,
+    items: [
+      "Centralized Contact Database",
+      "Customer Profiles",
+      "Interaction History",
+      "Company & Account Linking",
+      "Search & Filters"
+    ]
+  },
+  {
+    title: "Analytics & Insights",
+    icon: FiBarChart2,
+    items: [
+      "Sales Forecasting",
+      "Conversion Rate Analysis",
+      "Team Performance Reports",
+      "Funnel Visualization",
+      "Custom Dashboards"
+    ]
+  },
+  {
+    title: "Communication Tools",
+    icon: FiSmartphone,
+    items: [
+      "Email Integration",
+      "SMS & WhatsApp Messaging",
+      "Call Logging",
+      "Auto-Response Templates",
+      "Meeting Scheduling"
+    ]
+  },
+  {
+    title: "Security & Permissions",
+    icon: FiLock,
+    items: [
+      "Role-Based Access",
+      "Data Encryption",
+      "Login History Logs",
+      "Permission Settings",
+      "Two-Factor Authentication"
+    ]
+  },
+  {
+    title: "Workflow Automation",
+    icon: FiBarChart2,
+    items: [
+      "Auto Lead Assignment",
+      "Deal Stage Triggers",
+      "Email Follow-Up Sequences",
+      "Task Automation Rules",
+      "Custom Workflow Builder"
+    ]
+  }
+];
+
+
 const CRMCaseStudy = () => {
   return (
     <div className="min-h-screen text-gray-100 mt-25">
       {/* Hero Section */}
       <section className="relative py-15 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent unbounded">
+          <h1 className="mt-12 text-3xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent unbounded">
             Customer Relationship Management System
           </h1>
         </div>
@@ -123,49 +193,34 @@ const CRMCaseStudy = () => {
 
       {/* Technology Stack Section */}
       <section className="py-16 px-6 lg:px-24">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r p-2 from-purple-300 to-purple-200 bg-clip-text text-transparent mb-8">
-            💻 Technology Stack
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                items: [
-                  "React.js + Vite + Tailwind CSS UI",
-                  "Context API with useReducer for state",
-                  "Framer Motion for animations"
-                ],
-                color: "green"
-              },
-              {
-                items: [
-                  "Node.js + Express backend APIs",
-                  "MongoDB with Mongoose ODM",
-                  "Socket.io for live updates"
-                ],
-                color: "blue"
-              },
-              {
-                items: [
-                  "JWT-based authentication & RBAC",
-                  "Chart.js for real-time sales insights",
-                  "Jest & Supertest for API testing"
-                ],
-                color: "indigo"
-              }
-            ].map((section, index) => (
-              <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
-                <ul className="space-y-3 text-gray-300">
-                  {section.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <div className={`w-2 h-2 bg-${section.color}-400 rounded-full`} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {stack.map((category, index) => (
+            <div
+              key={index}
+              className="group relative p-8 rounded-3xl bg-white/5 backdrop-blur-2xl border border-gray-400/20 hover:border-gray-400/40 transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-gray-500/10"
+            >
+              <div className="absolute -inset-px rounded-3xl -z-10" />
+              <div className="flex items-center mb-6 space-x-4">
+                <div className="p-3 rounded-xl bg-gray-400/10 backdrop-blur-sm">
+                  <category.icon className="text-3xl text-white" />
+                </div>
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-300 to-gray-300 bg-clip-text text-transparent">
+                  {category.title}
+                </h2>
               </div>
-            ))}
-          </div>
+              <div className="grid grid-cols-2 gap-3">
+                {category.items.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center space-x-2 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors cursor-default"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-white animate-pulse" />
+                    <span className="text-gray-300 text-sm font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

@@ -84,7 +84,7 @@ const About2 = () => {
       </div>
 
       <div className="relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-br from-gray-500 via-gray-200 to-gray-300 p-2 unbounded">
+        <h2 className="text-5xl md:text-6xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-br from-gray-500 via-gray-200 to-gray-300 p-2 lato-900">
           Why <span className="bg-gradient-to-r from-purple-400 to-purple-600 px-4 rounded-4xl text-white">Choose</span> Us?
         </h2>
         <p className="text-center max-w-2xl mx-auto text-gray-300 mb-20">
@@ -128,7 +128,7 @@ const About2 = () => {
         <div className="mt-30 md:mt-35 relative px-4">
           <div className="flex flex-col md:flex-row gap-12 items-start justify-start max-w-7xl mx-auto relative">
             <div className="w-full md:w-1/2">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-200 to-gray-300 unbounded leading-10 md:leading-15">
+              <h2 className="text-5xl lg:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-200 to-gray-300 lato-900 leading-15 md:leading-20">
                 Industries We <span className="bg-gradient-to-r from-purple-400 to-purple-600 px-4 rounded-4xl text-white">Transform</span>
               </h2>
               <p className="text-gray-300 text-base md:text-lg max-w-sm">

@@ -2,6 +2,8 @@ import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/elements/navbar.jsx';
+import Footer from './components/elements/footer.jsx';
+import Whats from './../public/images/whatsapp.webp';
 
 const List = [
   {
@@ -129,14 +131,14 @@ const List = [
     component: lazy(() => import('./pages/caseStudies/caseSection/first9.jsx')),
   },
   {
-    path: '/case-studies/portfolio10',
-    component: lazy(() => import('./pages/caseStudies/caseSection/first10.jsx')),
+    path: '/clients',
+    component: lazy(() => import('./pages/ourclient/ourclientpage.jsx')),
   }
 ];
 
-const Footer = () => (
-  <footer className="bg-gray-800 text-white p-4 text-center">
-    Footer © 2025
+const Footers = () => (
+  <footer className="text-center">
+    <Footer/>
   </footer>
 );
 
@@ -155,7 +157,15 @@ const App = () => {
         </Suspense>
       </div>
 
-      <Footer />
+      <Footers />
+      <a
+        href='https://wa.link/5606l7'
+        target='_blank'
+        rel='noopener noreferrer'
+        className='fixed bottom-6 right-6 z-20 p-2 rounded-full transition-all lg:hover:scale-110 hover:scale-95 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10'
+      >
+        <img src={Whats} alt='WhatsApp' className='w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16' />
+      </a>
     </div>
   );
 };

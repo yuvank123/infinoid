@@ -51,7 +51,7 @@ const Career2 = () => {
                 </div>
 
                 <div className="text-center mb-10 mt-20 md:mt-20">
-                    <h2 className="text-4xl sm:text-5xl font-bold font-mono tracking-tighter bg-gradient-to-br from-gray-500 via-white to-gray-300 bg-clip-text text-transparent unbounded">
+                    <h2 className="text-5xl sm:text-6xl tracking-tighter bg-gradient-to-br from-gray-500 via-white to-gray-300 bg-clip-text text-transparent lato-900">
                         Shape Your <span className="bg-gradient-to-r from-purple-400 to-purple-600 px-4 rounded-4xl text-white">Success</span>
                     </h2>
                     <p className="text-base sm:text-lg text-gray-300/80 mt-2">

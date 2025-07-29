@@ -43,9 +43,9 @@ const Home1 = () => {
 
       {/* Hero Section */}
       <div className="relative z-10 flex flex-col items-center justify-center h-[90vh] px-6 text-center lg:top-20">
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text drop-shadow-md unbounded">
+        <h1 className="text-5xl sm:text-6xl lg:text-8xl md:tracking-[4px] md:leading-24 bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text drop-shadow-md lato-900">
           Innovative IT Solutions<br className="hidden md:block" />
-          for Modern <span className="bg-gradient-to-b from-[#360e86] via-[#6d41c4] to-[#b263f6] text-transparent bg-clip-text">Businesses</span>
+          for Modern <span className="bg-gradient-to-b from-[#6331c8] via-[#8752bb] to-[#b263f6] text-transparent bg-clip-text">Businesses</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg sm:text-xl text-gray-200 font-light">
           Building scalable, secure, and future-ready technology solutions that empower your digital transformation.

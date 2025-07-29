@@ -77,7 +77,7 @@ const Testimonial = () => {
             Testimonials
           </motion.h3>
           <motion.h2
-            className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-100 via-white to-gray-300 text-transparent bg-clip-text mt-4 unbounded"
+            className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-100 via-white to-gray-300 text-transparent bg-clip-text mt-4 lato-900 p-2"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}

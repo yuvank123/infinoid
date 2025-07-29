@@ -97,7 +97,7 @@ const Career = () => {
       </Helmet>
 
       <div className="max-w-7xl mx-auto text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-br from-gray-500 via-white to-gray-300 bg-clip-text text-transparent mb-4 unbounded">
+        <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-gray-500 via-white to-gray-300 bg-clip-text text-transparent mb-4 lato-900">
           Open <span className="bg-gradient-to-r from-purple-400 to-purple-600 px-4 rounded-4xl text-white">Positions</span>
         </h2>
         <p className="text-gray-400">Explore career opportunities tailored for tech innovators.</p>

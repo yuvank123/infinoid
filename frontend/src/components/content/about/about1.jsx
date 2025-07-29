@@ -59,7 +59,7 @@ const About1 = () => {
                     >
                         <h1
                             ref={headingRef}
-                            className='text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 unbounded leading-tight'
+                            className='text-4xl lg:text-7xl font-bold mb-4 lato-900 leading-tight'
                         >
                             Driving Global Success, One Innovation at a Time!
                         </h1>
@@ -99,13 +99,13 @@ const About1 = () => {
 
                 {/* About Us Section */}
                 <motion.div
-                    className='text-white px-6 sm:px-10 lg:px-24 py-20 text-center lg:text-left relative z-10'
+                    className='text-white px-6 sm:px-10 lg:px-24 py-20 text-center relative z-10'
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: 'easeOut' }}
                     viewport={{ once: true }}
                 >
-                    <h2 className='text-3xl sm:text-4xl font-bold mb-6 unbounded'>
+                    <h2 className='text-4xl sm:text-5xl font-bold mb-10 lato-500'>
                         About Us: Our Journey and Values
                     </h2>
                     <p className='text-lg sm:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto'>

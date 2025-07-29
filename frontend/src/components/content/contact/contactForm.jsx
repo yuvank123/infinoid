@@ -84,7 +84,7 @@ const ContactForm = ({ className = '', showTitle = true }) => {
   return (
     <div className={`backdrop-blur-xl bg-gradient-to-br from-white-900/10  p-8 rounded-3xl border border-white/10 shadow-2xl ${className}`}>
       {showTitle && (
-        <h2 className="text-3xl unbounded font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-6">
+        <h2 className="text-4xl lato-900 bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-6">
           Contact Us
         </h2>
       )}
@@ -154,7 +154,7 @@ const ContactForm = ({ className = '', showTitle = true }) => {
         <button 
           type="submit" 
           disabled={status.loading} 
-          className="w-full bg-gradient-to-r from-gray-500 to-white hover:from-white hover:to-gray-600 text-black font-semibold py-4 px-8 rounded-xl text-xl unbounded"
+          className="w-full bg-gradient-to-r from-gray-500 to-white hover:from-white hover:to-gray-600 text-black font-semibold py-4 px-8 rounded-xl text-xl lato-900"
         >
           {status.loading ? 'Sending...' : 'Submit'}
         </button>

@@ -32,7 +32,6 @@ const Navbar = () => {
                 ? 'bg-black/10 backdrop-blur-lg backdrop-saturate-150 border-b border-white/10 shadow-lg py-2 rounded-b-2xl'
                 : 'bg-black/10 backdrop-blur-xl backdrop-saturate-150 border-b border-white/10 py-3 rounded-b-2xl'
                 }`}
-
         >
             <div className="max-w-7xl mx-auto px-4 w-full flex flex-row items-center justify-between">
                 {/* Logo */}
@@ -229,15 +228,15 @@ const Navbar = () => {
 
                 {/* Desktop Button */}
                 <div className="navbar-end hidden lg:flex">
-                    <Link
-                        to="/schedule"
+                    <a
+                        href="https://calendly.com/infinoidtech/infinoid-technologies"
                         className="btn bg-gradient-to-r from-[#9058ff] to-[#b663ff] hover:from-[#9e68ff] hover:to-[#c172ff] text-white border-none hover:scale-[1.03] transition-transform shadow-lg hover:shadow-xl px-6 py-2 rounded-4xl"
                     >
                         <span className="material-symbols-outlined">
                             support_agent
                         </span>
                         Schedule A Call
-                    </Link>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -267,6 +266,19 @@ const Navbar = () => {
                         className="absolute top-0 right-0 w-3/4 max-w-xs h-[calc(110vh-4rem)] bg-[rgba(43,0,71,0.95)] backdrop-blur-xl shadow-2xl overflow-y-auto p-6 border-l border-white/10"
                         onClick={e => e.stopPropagation()}
                     >
+                        {/* Close button for mobile menu */}
+                        <div className="flex justify-end mb-4">
+                            <button
+                                onClick={() => setIsMenuOpen(false)}
+                                className="btn btn-ghost btn-circle text-white"
+                                aria-label="Close menu"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
                         <ul className="space-y-4">
                             <li>
                                 <Link
@@ -285,19 +297,19 @@ const Navbar = () => {
                                         <li className="mb-3">
                                             <span className="text-purple-300 font-semibold">Product Engineering</span>
                                             <ul className="pl-2 space-y-1">
-                                                <li><Link to="/services/web-dev" onClick={() => setIsMenuOpen(false)}>Web & Mobile App</Link></li>
-                                                <li><Link to="/services/ui-ux" onClick={() => setIsMenuOpen(false)}>UI/UX Design</Link></li>
-                                                <li><Link to="/services/custom-software" onClick={() => setIsMenuOpen(false)}>Custom Software</Link></li>
-                                                <li><Link to="/services/api-integrations" onClick={() => setIsMenuOpen(false)}>API Integrations</Link></li>
+                                                <li><Link to="/services/webmobile-dev" onClick={() => setIsMenuOpen(false)}>Web & Mobile App</Link></li>
+                                                <li><Link to="/services/uiux" onClick={() => setIsMenuOpen(false)}>UI/UX Design</Link></li>
+                                                <li><Link to="/services/csd" onClick={() => setIsMenuOpen(false)}>Custom Software</Link></li>
+                                                <li><Link to="/services/api-integration" onClick={() => setIsMenuOpen(false)}>API Integrations</Link></li>
                                             </ul>
                                         </li>
                                         <li className="mb-3">
                                             <span className="text-cyan-300 font-semibold">Enterprise Platforms</span>
                                             <ul className="pl-2 space-y-1">
                                                 <li><Link to="/services/crm-erp" onClick={() => setIsMenuOpen(false)}>CRM & ERP</Link></li>
-                                                <li><Link to="/services/visitor-management" onClick={() => setIsMenuOpen(false)}>Visitor Management</Link></li>
-                                                <li><Link to="/services/hrms-portals" onClick={() => setIsMenuOpen(false)}>HRMS Portals</Link></li>
-                                                <li><Link to="/services/workflow-automation" onClick={() => setIsMenuOpen(false)}>Workflow Automation</Link></li>
+                                                <li><Link to="/services/vms" onClick={() => setIsMenuOpen(false)}>Visitor Management</Link></li>
+                                                <li><Link to="/services/Hrms-adminportals" onClick={() => setIsMenuOpen(false)}>HRMS Portals</Link></li>
+                                                <li><Link to="/services/wla" onClick={() => setIsMenuOpen(false)}>Workflow Automation</Link></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -305,15 +317,15 @@ const Navbar = () => {
                                             <ul className="pl-2 space-y-1">
                                                 <li><Link to="/services/cloud" onClick={() => setIsMenuOpen(false)}>Cloud Architecture</Link></li>
                                                 <li><Link to="/services/devops" onClick={() => setIsMenuOpen(false)}>DevOps</Link></li>
-                                                <li><Link to="/services/microservices" onClick={() => setIsMenuOpen(false)}>Microservices</Link></li>
-                                                <li><Link to="/services/security" onClick={() => setIsMenuOpen(false)}>Cybersecurity</Link></li>
+                                                <li><Link to="/services/Microservices" onClick={() => setIsMenuOpen(false)}>Microservices</Link></li>
+                                                <li><Link to="/services/cybersecurity" onClick={() => setIsMenuOpen(false)}>Cybersecurity</Link></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <span className="text-pink-300 font-semibold">AI & Emerging Tech</span>
                                             <ul className="pl-2 space-y-1">
-                                                <li><Link to="/services/ai" onClick={() => setIsMenuOpen(false)}>AI & ML</Link></li>
-                                                <li><Link to="/services/genai-chatbots" onClick={() => setIsMenuOpen(false)}>Generative AI</Link></li>
+                                                <li><Link to="/services/aiml" onClick={() => setIsMenuOpen(false)}>AI & ML</Link></li>
+                                                <li><Link to="/services/GenAI-Chatbot" onClick={() => setIsMenuOpen(false)}>Generative AI</Link></li>
                                                 <li><Link to="/services/blockchain" onClick={() => setIsMenuOpen(false)}>Blockchain</Link></li>
                                                 <li><Link to="/services/arvr" onClick={() => setIsMenuOpen(false)}>AR/VR</Link></li>
                                                 <li><Link to="/services/iot" onClick={() => setIsMenuOpen(false)}>IoT Systems</Link></li>
@@ -354,13 +366,13 @@ const Navbar = () => {
                             </li>
 
                             <li className="pt-4">
-                                <Link
-                                    to="/schedule"
+                                <a
+                                    href="https://calendly.com/infinoidtech/infinoid-technologies"
                                     className="btn bg-gradient-to-r from-[#9058ff] to-[#b663ff] text-white border-none w-full text-center py-3 rounded-lg"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     Schedule A Call
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>

@@ -1,6 +1,39 @@
 import React from 'react';
-import { FiServer, FiCpu, FiCloud, FiTool, FiShoppingCart } from 'react-icons/fi';
+import { FiServer, FiCpu, FiCloud, FiTool, FiShoppingCart, FiBox, FiClipboard, FiTruck, FiDatabase, FiActivity, FiSettings } from 'react-icons/fi';
 import OverviewImg5 from '../../../../../../public/images/port5.webp'
+
+const stack = [
+  {
+    title: "Stock Management",
+    icon: FiBox,
+    items: ["Real-Time Stock Levels", "Batch Tracking", "Low Stock Alerts", "SKU Management", "Barcode Scanning"]
+  },
+  {
+    title: "Order Management",
+    icon: FiClipboard,
+    items: ["Purchase Orders", "Sales Orders", "Order Status Tracking", "Returns Handling", "Auto Reordering"]
+  },
+  {
+    title: "Supplier & Vendor",
+    icon: FiTruck,
+    items: ["Vendor Profiles", "Supplier Contracts", "Procurement Logs", "Delivery Scheduling", "Rating & Feedback"]
+  },
+  {
+    title: "Data & Reporting",
+    icon: FiDatabase,
+    items: ["Inventory Valuation", "Stock Movement Reports", "Dead Stock Identification", "Custom Filters", "CSV/Excel Export"]
+  },
+  {
+    title: "Performance Analytics",
+    icon: FiActivity,
+    items: ["Turnover Ratio", "Demand Forecasting", "Inventory KPIs", "Restock Timing", "Real-Time Dashboards"]
+  },
+  {
+    title: "System Configuration",
+    icon: FiSettings,
+    items: ["Warehouse Setup", "Multi-Location Support", "User Access Control", "Notification Rules", "API Integrations"]
+  }
+];
 
 const InventoryManagementCaseStudy = () => {
   return (
@@ -8,7 +41,7 @@ const InventoryManagementCaseStudy = () => {
       {/* Hero Section */}
       <section className="relative py-15 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 unbounded from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent">
+          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 lato-900 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent">
             Inventory Management System
           </h1>
         </div>
@@ -117,49 +150,34 @@ const InventoryManagementCaseStudy = () => {
 
       {/* Technology Stack Section */}
       <section className="py-16 px-6 lg:px-24">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r p-2 from-blue-300 to-purple-200 bg-clip-text text-transparent mb-8">
-            💻 Technology Stack
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                items: [
-                  "React.js + Next.js (App Router), Tailwind CSS",
-                  "Redux for state management",
-                  "Styled Components for modular styling"
-                ],
-                color: "blue"
-              },
-              {
-                items: [
-                  "Node.js, Express.js for backend services",
-                  "MongoDB/PostgreSQL for database management",
-                  "GraphQL for efficient data querying"
-                ],
-                color: "purple"
-              },
-              {
-                items: [
-                  "Docker for containerization",
-                  "AWS/Azure for cloud hosting",
-                  "Jest and Cypress for testing and QA"
-                ],
-                color: "blue"
-              }
-            ].map((section, index) => (
-              <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
-                <ul className="space-y-3 text-gray-300">
-                  {section.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <div className={`w-2 h-2 bg-${section.color}-400 rounded-full`} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {stack.map((category, index) => (
+            <div
+              key={index}
+              className="group relative p-8 rounded-3xl bg-white/5 backdrop-blur-2xl border border-gray-400/20 hover:border-gray-400/40 transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-gray-500/10"
+            >
+              <div className="absolute -inset-px rounded-3xl -z-10" />
+              <div className="flex items-center mb-6 space-x-4">
+                <div className="p-3 rounded-xl bg-gray-400/10 backdrop-blur-sm">
+                  <category.icon className="text-3xl text-white" />
+                </div>
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-300 to-gray-300 bg-clip-text text-transparent">
+                  {category.title}
+                </h2>
               </div>
-            ))}
-          </div>
+              <div className="grid grid-cols-2 gap-3">
+                {category.items.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center space-x-2 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors cursor-default"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-white animate-pulse" />
+                    <span className="text-gray-300 text-sm font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

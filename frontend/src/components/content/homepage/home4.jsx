@@ -52,8 +52,8 @@ const Home4 = () => {
 
       <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-7xl mx-auto gap-10">
         {/* Left Text Section */}
-        <div className="flex-1 max-w-lg space-y-4 z-10">
-          <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold leading-tight unbounded bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text">
+        <div className="flex-1 max-w-lg space-y-4 z-10 ">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight lato-900 bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text">
             Revolutionizing Enterprise <br /> <span className="bg-gradient-to-r from-purple-400 to-purple-600 px-4 rounded-4xl text-white"> Solutions</span> 
           </h1>
           <p className="text-gray-400">

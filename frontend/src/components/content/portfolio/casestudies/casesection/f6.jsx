@@ -1,7 +1,76 @@
 import React from 'react';
-import { FiUserCheck, FiLock, FiCamera, FiCpu, FiSmartphone } from 'react-icons/fi';
+import { FiUserCheck, FiLock, FiCamera, FiCpu, FiSmartphone, FiUserPlus, FiCheckCircle, FiKey, FiBell, FiShield, FiBarChart2 } from 'react-icons/fi';
 import OverviewImg1 from '../../../../../../public/images/vms1.webp';
 import OverviewImg2 from '../../../../../../public/images/vms2.webp';
+
+const stack = [
+  {
+    title: "Visitor Check-In",
+    icon: FiUserPlus,
+    items: [
+      "Digital Kiosk Entry",
+      "QR Code Check-In",
+      "Pre-Registration",
+      "Walk-in Registration",
+      "ID Verification"
+    ]
+  },
+  {
+    title: "Access Management",
+    icon: FiKey,
+    items: [
+      "Badge Printing",
+      "Zone-Based Permissions",
+      "Access Expiry Control",
+      "Host Approval Workflow",
+      "Touchless Entry"
+    ]
+  },
+  {
+    title: "Security & Compliance",
+    icon: FiShield,
+    items: [
+      "Blacklist Watch",
+      "NDA Signing",
+      "Emergency Alerts",
+      "Evacuation Logs",
+      "Audit Trail"
+    ]
+  },
+  {
+    title: "Notifications & Alerts",
+    icon: FiBell,
+    items: [
+      "Host Notifications",
+      "Real-Time Visitor Alerts",
+      "Check-In/Out Reminders",
+      "Custom Email & SMS",
+      "Admin Broadcasts"
+    ]
+  },
+  {
+    title: "Analytics & Reporting",
+    icon: FiBarChart2,
+    items: [
+      "Daily/Weekly Logs",
+      "Visitor Volume Trends",
+      "Most Frequent Visitors",
+      "Check-In Time Stats",
+      "Exportable Reports"
+    ]
+  },
+  {
+    title: "Approval & Workflow",
+    icon: FiCheckCircle,
+    items: [
+      "Visit Purpose Review",
+      "Host-Based Approvals",
+      "Multi-Level Authorization",
+      "Scheduled Visit Approvals",
+      "History & Comment Logs"
+    ]
+  }
+];
 
 const VisitorManagementCaseStudy = () => {
   return (
@@ -9,7 +78,7 @@ const VisitorManagementCaseStudy = () => {
       {/* Hero Section */}
       <section className="relative py-15 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent unbounded">
+          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent lato-900">
             Visitor Management System
           </h1>
         </div>
@@ -123,49 +192,34 @@ const VisitorManagementCaseStudy = () => {
 
       {/* Technology Stack Section */}
       <section className="py-16 px-6 lg:px-24">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r p-2 from-purple-300 to-purple-200 bg-clip-text text-transparent mb-8">
-            💻 Technology Stack
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                items: [
-                  "React.js + Vite, Tailwind CSS",
-                  "Context API for state management",
-                  "Framer Motion for animations"
-                ],
-                color: "green"
-              },
-              {
-                items: [
-                  "Node.js, Express.js for backend logic",
-                  "MongoDB for database storage",
-                  "Socket.io for real-time communication"
-                ],
-                color: "blue"
-              },
-              {
-                items: [
-                  "Face recognition via OpenCV.js",
-                  "Firebase for authentication and hosting",
-                  "Playwright & Jest for end-to-end testing"
-                ],
-                color: "indigo"
-              }
-            ].map((section, index) => (
-              <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
-                <ul className="space-y-3 text-gray-300">
-                  {section.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <div className={`w-2 h-2 bg-${section.color}-400 rounded-full`} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {stack.map((category, index) => (
+            <div
+              key={index}
+              className="group relative p-8 rounded-3xl bg-white/5 backdrop-blur-2xl border border-gray-400/20 hover:border-gray-400/40 transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-gray-500/10"
+            >
+              <div className="absolute -inset-px rounded-3xl -z-10" />
+              <div className="flex items-center mb-6 space-x-4">
+                <div className="p-3 rounded-xl bg-gray-400/10 backdrop-blur-sm">
+                  <category.icon className="text-3xl text-white" />
+                </div>
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-300 to-gray-300 bg-clip-text text-transparent">
+                  {category.title}
+                </h2>
               </div>
-            ))}
-          </div>
+              <div className="grid grid-cols-2 gap-3">
+                {category.items.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center space-x-2 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors cursor-default"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-white animate-pulse" />
+                    <span className="text-gray-300 text-sm font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

@@ -1,19 +1,86 @@
 import React from 'react';
-import { FiUserCheck, FiLogIn, FiLogOut, FiCpu, FiSmartphone } from 'react-icons/fi';
-import OverviewImg1 from '../../../../../../public/images/checkin1.webp';
-import OverviewImg2 from '../../../../../../public/images/checkin2.webp';
-import OverviewImg3 from '../../../../../../public/images/checkin3.webp';
-import OverviewImg4 from '../../../../../../public/images/checkout1.webp';
-import OverviewImg6 from '../../../../../../public/images/checkout3.webp';// Replace with actual image path
+import { FiShoppingCart, FiTruck, FiPhoneCall, FiLock, FiActivity } from 'react-icons/fi';
+import OverviewImg1 from '../../../../../../public/images/bk1.webp';
+import OverviewImg2 from '../../../../../../public/images/bk2.webp';
+import OverviewImg3 from '../../../../../../public/images/bk3.webp'; // Replace with your bakery image
 
-const CheckInOutSystemCaseStudy = () => {
+const stack = [
+  {
+    title: "Online Ordering",
+    icon: FiShoppingCart,
+    items: [
+      "Custom Cake Builder",
+      "Add to Cart & Wishlist",
+      "One-Click Checkout",
+      "Order Scheduling",
+      "Discount Code Support"
+    ]
+  },
+  {
+    title: "Delivery & Logistics",
+    icon: FiTruck,
+    items: [
+      "Same-Day Delivery Options",
+      "Live Delivery Tracking",
+      "Pickup & Doorstep Options",
+      "Delivery Slot Selection",
+      "Pincode Service Availability"
+    ]
+  },
+  {
+    title: "Customer Support",
+    icon: FiPhoneCall,
+    items: [
+      "Live Chat Assistance",
+      "Order Inquiry Support",
+      "Feedback & Ratings",
+      "Help Center Integration",
+      "WhatsApp Support"
+    ]
+  },
+  {
+    title: "Security & Payments",
+    icon: FiLock,
+    items: [
+      "Secure Payment Gateway",
+      "Multiple Payment Options",
+      "Order Confirmation Email/SMS",
+      "Fraud Detection",
+      "User Data Protection"
+    ]
+  },
+  {
+    title: "Performance & Insights",
+    icon: FiActivity,
+    items: [
+      "Sales Analytics",
+      "Top Selling Products",
+      "Customer Purchase Trends",
+      "Inventory Monitoring",
+      "Exportable Reports"
+    ]
+  },
+  {
+    title: "Offers & Loyalty",
+    icon: FiShoppingCart,
+    items: [
+      "Coupon Management",
+      "Loyalty Points System",
+      "Referral Discounts",
+      "First-Time Buyer Offers",
+      "Festival & Seasonal Deals"
+    ]
+  }
+];
+
+const BakeryEcommerceCaseStudy = () => {
   return (
     <div className="min-h-screen text-gray-100 mt-25">
       {/* Hero Section */}
       <section className="relative py-15 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent unbounded">
-            Check-In and Check-Out System
+          <h1 className="mt-12 text-3xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent unbounded">
+            Bakery E-Commerce Platform
           </h1>
         </div>
       </section>
@@ -25,38 +92,22 @@ const CheckInOutSystemCaseStudy = () => {
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technology developed a smart Check-In/Check-Out system that enables organizations to monitor entries and exits of employees, visitors, and students in real-time. This contactless system streamlines tracking, enhances accountability, and ensures compliance with operational and safety protocols.
+            Infinoid Technology designed a complete E-Commerce platform tailored for artisan bakeries and home-based dessert businesses. With elegant UI and seamless backend automation, this system transforms how bakeries handle online orders, deliveries, and product showcases.
           </p>
           <p className="text-xl italic text-blue-300">
-            "Track every movement, improve operational clarity — with precision by Infinoid."
+            "From oven to doorstep — sell sweet, sell smart with Infinoid."
           </p>
         </div>
-        {/* Overview Image */}
         <div className="flex flex-col md:flex-row justify-center mt-20 gap-2">
           <img
-            src={OverviewImg1}
-            alt="Check-In and Check-Out System Overview"
-            className="rounded-2xl max-w-xl md:h-[400px]"
-          />
-          <img
-            src={OverviewImg2}
-            alt="Check-In and Check-Out System Overview"
-            className="rounded-2xl max-w-xl md:h-[400px]"
-          />
-          <img
             src={OverviewImg3}
-            alt="Check-In and Check-Out System Overview"
-            className="rounded-2xl max-w-xl md:h-[400px]"
+            alt="Bakery E-Commerce Platform"
+            className="rounded-2xl max-w-2xl md:h-[400px]"
           />
           <img
-            src={OverviewImg4}
-            alt="Check-In and Check-Out System Overview"
-            className="rounded-2xl max-w-xl md:h-[400px]"
-          />
-          <img
-            src={OverviewImg6}
-            alt="Check-In and Check-Out System Overview"
-            className="rounded-2xl max-w-xl md:h-[400px]"
+            src={OverviewImg1}
+            alt="Bakery E-Commerce Platform"
+            className="rounded-2xl max-w-2xl md:h-[400px]"
           />
         </div>
       </section>
@@ -64,30 +115,30 @@ const CheckInOutSystemCaseStudy = () => {
       {/* Challenges Section */}
       <section className="py-16 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-red-400 to-blue-300 bg-clip-text text-transparent mb-8">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-pink-400 to-red-300 bg-clip-text text-transparent mb-8">
             ❌ Challenges Faced
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               {
-                title: "Unreliable Manual Logs",
-                content: "Paper registers lacked accuracy and were prone to manipulation.",
-                icon: <FiUserCheck className="text-2xl text-yellow-400" />
+                title: "Manual Order Processing",
+                content: "Handling orders via phone or DM led to errors and missed deliveries.",
+                icon: <FiPhoneCall className="text-2xl text-purple-400" />
               },
               {
-                title: "No Timestamped Proof",
-                content: "No digital trail for exact check-in and check-out timings.",
-                icon: <FiLogIn className="text-2xl text-red-400" />
+                title: "No Real-Time Inventory",
+                content: "Frequent stock-outs due to lack of synced inventory tracking.",
+                icon: <FiActivity className="text-2xl text-pink-400" />
               },
               {
-                title: "Limited Real-Time Access",
-                content: "Admins could not track entries or exits remotely or instantly.",
-                icon: <FiCpu className="text-2xl text-blue-400" />
+                title: "Limited Delivery Scheduling",
+                content: "Customers couldn’t pick time slots, leading to delivery delays.",
+                icon: <FiTruck className="text-2xl text-green-400" />
               },
               {
-                title: "No Integration with ID Systems",
-                content: "Disconnection from ID scanners and mobile apps created delays.",
-                icon: <FiSmartphone className="text-2xl text-green-400" />
+                title: "Insecure Payments",
+                content: "No payment gateway integration led to trust and refund issues.",
+                icon: <FiLock className="text-2xl text-red-400" />
               }
             ].map((item, index) => (
               <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
@@ -111,9 +162,9 @@ const CheckInOutSystemCaseStudy = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               {[
-                "QR-based digital check-in/check-out system",
-                "Automatic time logging with location and device ID",
-                "Real-time dashboard for entry/exit monitoring"
+                "Real-time product catalog with high-res images and categories",
+                "Integrated payment gateways: Razorpay, Stripe, UPI",
+                "Scheduled delivery and pickup module with time slot selection"
               ].map((item, index) => (
                 <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
                   <div className="border-l-4 border-purple-400 pl-4">
@@ -124,9 +175,9 @@ const CheckInOutSystemCaseStudy = () => {
             </div>
             <div className="space-y-8">
               {[
-                "Integration with access control and ID cards",
-                "Cloud-based logs for audits and reporting",
-                "Mobile app for on-the-go check-in and admin alerts"
+                "Dynamic inventory & order status updates",
+                "Admin dashboard with analytics and coupon controls",
+                "Mobile-first responsive UI for seamless customer browsing"
               ].map((item, index) => (
                 <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
                   <div className="border-l-4 border-purple-400 pl-4">
@@ -141,75 +192,60 @@ const CheckInOutSystemCaseStudy = () => {
 
       {/* Technology Stack Section */}
       <section className="py-16 px-6 lg:px-24">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r p-2 from-purple-300 to-purple-200 bg-clip-text text-transparent mb-8">
-            💻 Technology Stack
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                items: [
-                  "React.js + Vite + Tailwind CSS",
-                  "Context API for session handling",
-                  "Framer Motion for UI effects"
-                ],
-                color: "green"
-              },
-              {
-                items: [
-                  "Node.js + Express backend APIs",
-                  "MongoDB for log storage",
-                  "Socket.io for live updates"
-                ],
-                color: "blue"
-              },
-              {
-                items: [
-                  "Firebase Auth for login & roles",
-                  "Geo-location & device ID capture",
-                  "Jest for backend unit testing"
-                ],
-                color: "indigo"
-              }
-            ].map((section, index) => (
-              <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
-                <ul className="space-y-3 text-gray-300">
-                  {section.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <div className={`w-2 h-2 bg-${section.color}-400 rounded-full`} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {stack.map((category, index) => (
+            <div
+              key={index}
+              className="group relative p-8 rounded-3xl bg-white/5 backdrop-blur-2xl border border-gray-400/20 hover:border-gray-400/40 transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-gray-500/10"
+            >
+              <div className="absolute -inset-px rounded-3xl -z-10" />
+              <div className="flex items-center mb-6 space-x-4">
+                <div className="p-3 rounded-xl bg-gray-400/10 backdrop-blur-sm">
+                  <category.icon className="text-3xl text-white" />
+                </div>
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-300 to-gray-300 bg-clip-text text-transparent">
+                  {category.title}
+                </h2>
               </div>
-            ))}
-          </div>
+              <div className="grid grid-cols-2 gap-3">
+                {category.items.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center space-x-2 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors cursor-default"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-white animate-pulse" />
+                    <span className="text-gray-300 text-sm font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Why Choose Infinoid Section */}
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-purple-200 bg-clip-text text-transparent mb-12">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-blue-200 bg-clip-text text-transparent mb-12">
             🌟 Why Infinoid?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Real-Time Tracking",
-                content: "Monitor employee and visitor activity as it happens."
+                title: "User-Friendly UI",
+                content: "Minimal clicks to checkout, even for non-tech-savvy customers."
               },
               {
-                title: "Accurate Logs",
-                content: "Every check-in/out is timestamped with device and location data."
+                title: "Order Accuracy",
+                content: "Real-time updates reduce miscommunication and wrong orders."
               },
               {
-                title: "Secure System",
-                content: "Role-based access with secure authentication and cloud storage."
+                title: "Secure Transactions",
+                content: "Encrypted payment flow with detailed invoices and receipts."
               },
               {
-                title: "Scalable Deployment",
-                content: "Easily deployable across multiple branches or premises."
+                title: "Growth-Oriented",
+                content: "Supports discounts, seasonal sales, and upselling modules."
               }
             ].map((item, index) => (
               <div key={index} className="bg-gradient-to-br from-purple-500 to-blue-500 p-px rounded-2xl">
@@ -226,4 +262,4 @@ const CheckInOutSystemCaseStudy = () => {
   );
 };
 
-export default CheckInOutSystemCaseStudy;
+export default BakeryEcommerceCaseStudy;

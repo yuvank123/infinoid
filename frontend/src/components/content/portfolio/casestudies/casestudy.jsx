@@ -51,14 +51,8 @@ const AboutUs = () => {
             description: "Our CRM system helps teams manage customer data, automate workflows, and improve client engagement with insightful analytics."
         },
         {
-            title: "Check-In and Check-Out System",
-            link: "/case-studies/portfolio9",
-            subtitle: "Monitoring Entry and Exit",
-            description: "A robust check-in/out system that logs personnel movement, integrates with biometric devices, and generates real-time reports."
-        },
-        {
             title: "Bakery E-Commerce Platform",
-            link: "/case-studies/portfolio10",
+            link: "/case-studies/portfolio9",
             subtitle: "Delivering Freshness with Every Click",
             description: "SweetBite is a bakery-focused e-commerce platform offering online ordering, real-time inventory, personalized product recommendations, and seamless delivery tracking to bring freshly baked goods to customers' doorsteps."
         }

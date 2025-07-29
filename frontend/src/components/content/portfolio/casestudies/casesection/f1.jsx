@@ -1,6 +1,49 @@
 import React from 'react';
-import { FiServer, FiCpu, FiCloud, FiTool } from 'react-icons/fi';
+import {
+  FiServer,
+  FiCpu,
+  FiCloud,
+  FiTool,
+  FiSettings,
+  FiLink,
+  FiShield,
+  FiBarChart2
+} from 'react-icons/fi';
 import OverviewImg1 from '../../../../../../public/images/port3.webp';
+
+const stack = [
+  {
+    title: "AR Development",
+    icon: FiSettings,
+    items: ["WebXR", "AR.js", "8thWall", "Unity AR Foundation", "Marker/Markerless AR"]
+  },
+  {
+    title: "VR Development",
+    icon: FiCpu,
+    items: ["Unity 3D", "Three.js", "A-Frame", "Oculus SDK", "WebVR", "Unreal Engine"]
+  },
+  {
+    title: "3D Rendering",
+    icon: FiBarChart2,
+    items: ["Three.js", "Blender Assets", "GLTF Models", "Lighting & Shadows", "PBR Materials"]
+  },
+  {
+    title: "Interaction & Input",
+    icon: FiTool,
+    items: ["Gesture Recognition", "Voice Commands", "Eye Tracking", "Motion Sensors", "Controllers"]
+  },
+  {
+    title: "Deployment & Performance",
+    icon: FiCloud,
+    items: ["CDN Distribution", "Asset Compression", "Progressive Loading", "Cloud Streaming", "Cross-Platform"]
+  },
+  {
+    title: "Analytics & Personalization",
+    icon: FiLink,
+    items: ["Session Tracking", "Heatmaps", "User Behavior", "Personalized Scenes", "Engagement Metrics"]
+  }
+];
+
 
 const ARVRCaseStudy = () => {
   return (
@@ -8,7 +51,7 @@ const ARVRCaseStudy = () => {
       {/* Hero Section */}
       <section className="relative py-15 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent unbounded">
+          <h1 className="mt-12 text-4xl md:text-7xl bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent lato-900">
             AR/VR Experience Platform
           </h1>
         </div>
@@ -27,14 +70,13 @@ const ARVRCaseStudy = () => {
             "Enter a world beyond reality — with Infinoid's immersive AR/VR solutions."
           </p>
         </div>
-        {/* Overview Image */}
         <div className="flex justify-center mt-20">
-            <img
-              src={OverviewImg1}
-              alt="AR/VR Overview"
-              className="rounded-2xl w-full max-w-4xl"
-            />
-          </div>
+          <img
+            src={OverviewImg1}
+            alt="AR/VR Overview"
+            className="rounded-2xl w-full max-w-4xl"
+          />
+        </div>
       </section>
 
       {/* Challenges Section */}
@@ -117,34 +159,34 @@ const ARVRCaseStudy = () => {
 
       {/* Technology Stack Section */}
       <section className="py-16 px-6 lg:px-24">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r p-2 from-purple-300 to-red-200 bg-clip-text text-transparent mb-8">
-            💻 Technology Stack
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-600">
-              <thead>
-                <tr>
-                  <th className="px-6 py-3 text-left text-xl font-semibold text-gray-300">Layer</th>
-                  <th className="px-6 py-3 text-left text-xl font-semibold text-gray-300">Tech Used</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-700">
-                {[
-                  { layer: "AR/VR Engine", tech: "Unity 3D, WebXR, Three.js" },
-                  { layer: "Frontend", tech: "React.js, Tailwind CSS" },
-                  { layer: "Backend", tech: "Node.js, Express.js" },
-                  { layer: "Tracking", tech: "TensorFlow.js, A-Frame" },
-                  { layer: "Deployment", tech: "Firebase, Netlify, Vercel" }
-                ].map((item, idx) => (
-                  <tr key={idx}>
-                    <td className="px-6 py-4 whitespace-nowrap text-gray-300">{item.layer}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-gray-300">{item.tech}</td>
-                  </tr>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {stack.map((category, index) => (
+            <div
+              key={index}
+              className="group relative p-8 rounded-3xl bg-white/5 backdrop-blur-2xl border border-gray-400/20 hover:border-gray-400/40 transition-all duration-300 hover:-translate-y-2 shadow-xl hover:shadow-gray-500/10"
+            >
+              <div className="absolute -inset-px rounded-3xl -z-10" />
+              <div className="flex items-center mb-6 space-x-4">
+                <div className="p-3 rounded-xl bg-gray-400/10 backdrop-blur-sm">
+                  <category.icon className="text-3xl text-white" />
+                </div>
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-gray-300 to-gray-300 bg-clip-text text-transparent">
+                  {category.title}
+                </h2>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {category.items.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center space-x-2 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors cursor-default"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-white animate-pulse" />
+                    <span className="text-gray-300 text-sm font-medium">{item}</span>
+                  </div>
                 ))}
-              </tbody>
-            </table>
-          </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -173,7 +215,7 @@ const ARVRCaseStudy = () => {
                 content: "ML-enhanced interaction logs drive custom experiences for every user."
               }
             ].map((item, index) => (
-              <div key={index} className={`bg-gradient-to-br from-purple-500 to-blue-500 p-px rounded-2xl`}>
+              <div key={index} className="bg-gradient-to-br from-purple-500 to-blue-500 p-px rounded-2xl">
                 <div className="bg-gray-900 rounded-2xl p-6 h-full">
                   <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                   <p className="text-gray-300">{item.content}</p>
