@@ -37,14 +37,17 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 w-full flex flex-row items-center justify-between h-[8vh]">
                 {/* Logo */}
                 <div className="navbar-start overflow-hidden h-[90px]">
-                    <Link to="/" className="flex items-center ">
-                            <img
-                                src={Logo}
-                                alt="Infinoid Logo"
-                                className="h-[200px] object-contain rounded-lg"
-                            />
+                    <Link to="/" className="flex items-center">
+                        <img
+                            src={Logo}
+                            alt="Infinoid Logo"
+                            width="200"
+                            height="90"
+                            className="object-contain rounded-lg"
+                        />
                     </Link>
                 </div>
+
                 {/* Desktop Navigation */}
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-1">

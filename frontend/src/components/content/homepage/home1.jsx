@@ -47,7 +47,7 @@ const Home1 = () => {
           <h3 className='text-2xl sm:text-4xl text-gray-300'>AI-Powered Innovation</h3>
         </div>
         <h1
-          className="text-5xl sm:text-6xl md:text-8xl lg:text-8xl bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text drop-shadow-md lato-900"
+          className="text-5xl sm:text-6xl md:text-[90xl] lg:text-[90px] bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text drop-shadow-md lato-900"
           style={{ fontSizeAdjust: 0.52 }}
         >
           Agile & Scalable IT Services<br className="hidden md:block" />
