@@ -79,12 +79,12 @@ const CRMERP1 = () => {
                             Connect your Customer Relationship and Enterprise Resource systems effortlessly to unify data, improve efficiency, and enable end-to-end automation.
                         </p>
 
-                        <button
-                            ref={btnRef}
+                        <a
+                            href='/contact'
                             className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
                         >
                             Discover CRM/ERP Solutions
-                        </button>
+                        </a>
                     </div>
 
                     {/* 📷 Right Image */}

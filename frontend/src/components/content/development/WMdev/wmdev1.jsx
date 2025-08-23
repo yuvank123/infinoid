@@ -48,9 +48,12 @@ const Wmdev1 = () => {
           <p className="text-base sm:text-lg text-gray-300 mb-6">
             Experience seamless design across desktops and mobiles with modern, responsive interfaces.
           </p>
-          <button className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition">
+          <a
+          className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition"
+          href='/contact'
+          >
             Get Started
-          </button>
+          </a>
         </div>
 
         {/* Device Section */}

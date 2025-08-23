@@ -79,12 +79,12 @@ const VMS1 = () => {
                             Streamline visitor check-ins, track entries in real-time, and enhance security with an intelligent and automated VMS solution.
                         </p>
 
-                        <button
-                            ref={btnRef}
+                        <a
+                            href='/contact'
                             className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
                         >
                             Explore VMS Features
-                        </button>
+                        </a>
                     </div>
 
                     {/* 📷 Right Image */}

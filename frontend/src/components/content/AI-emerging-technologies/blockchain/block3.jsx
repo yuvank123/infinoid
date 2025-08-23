@@ -5,7 +5,7 @@ import {
     FiShield, FiCode, FiLink, FiLock,
     FiCpu, FiBarChart2
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/2.webp"; // Replace with appropriate image
+import Trackpng from "../../../../../public/images/17.svg"; // Replace with appropriate image
 
 const blockchainStack = [
     {

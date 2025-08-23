@@ -5,7 +5,7 @@ import {
     FiCpu, FiSettings, FiFeather, FiLink,
     FiBarChart2, FiCode
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/2.webp"; // Update path as needed
+import Trackpng from "../../../../../public/images/16.svg"; // Update path as needed
 
 const genAIStack = [
     {

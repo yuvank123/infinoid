@@ -79,12 +79,12 @@ const WorkflowAutomation = () => {
                             Automate processes, optimize supply chains, and track operations in real-time with our AI-powered workflow and logistics solution.
                         </p>
 
-                        <button
-                            ref={btnRef}
+                        <a
+                            href='/contact'
                             className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
                         >
                             Discover Automation Benefits
-                        </button>
+                        </a>
                     </div>
 
                     {/* 📷 Right Image */}

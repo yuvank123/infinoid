@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fi';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Trackpng from "../../../../../public/images/2.webp";
+import Trackpng from "../../../../../public/images/2.svg";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);

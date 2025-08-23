@@ -5,7 +5,7 @@ import {
     FiUsers, FiDollarSign, FiBarChart2, FiSettings,
     FiServer, FiBriefcase, FiDatabase, FiTruck, FiFileText
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/2.webp";
+import Trackpng from "../../../../../public/images/8.svg";
 
 // 🔹 CRM Stack Only
 const crmStack = [

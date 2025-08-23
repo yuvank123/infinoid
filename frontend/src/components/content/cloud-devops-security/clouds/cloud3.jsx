@@ -10,7 +10,7 @@ import {
     FiTrendingUp,
     FiPackage,
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/4.webp"; // 🔁 Replace with your cloud diagram
+import Trackpng from "../../../../../public/images/10.svg"; // 🔁 Replace with your cloud diagram
 
 // 🔹 Cloud Architecture Stack
 const cloudStack = [

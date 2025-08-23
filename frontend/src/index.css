@@ -151,3 +151,61 @@
         .hover\\:animation-paused:hover {
           animation-play-state: paused;
         }
+
+
+         @keyframes gradient-rotate {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        .animate-gradient-rotate {
+          animation: gradient-rotate 10s linear infinite;
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask-composite: exclude;
+          -webkit-mask-composite: xor;
+        }
+
+        .custom-scroll {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+
+        .custom-scroll::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+
+        .prose-invert {
+          max-width: 100%;
+        }
+
+        .prose-invert h2 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin: 2rem 0 1rem;
+          background: linear-gradient(90deg, #7e5bef 0%, #4f46e5 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+        }
+
+        .prose-invert p {
+          margin-bottom: 1.25rem;
+          line-height: 1.7;
+          color: #e5e7eb;
+        }
+
+        .prose-invert a {
+          transition: all 0.3s ease;
+          text-decoration: underline;
+          color: #a78bfa;
+        }
+
+        .prose-invert a:hover {
+          color: #8b5cf6;
+        }
+
+        .prose-invert strong {
+          color: #ffffff;
+        }

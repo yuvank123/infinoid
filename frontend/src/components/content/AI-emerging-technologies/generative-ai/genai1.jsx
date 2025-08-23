@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
-import sampleImg from '../../../../../public/images/crmerp.webp'; // Replace with actual GenAI image
+import sampleImg from '../../../../../public/images/genaiimage.png'; // Replace with actual GenAI image
 
 const GenerativeAI = () => {
   const rotate = useMotionValue(0);
@@ -76,12 +76,12 @@ const GenerativeAI = () => {
               Automate conversations, boost productivity, and generate human-like content using state-of-the-art generative AI models and NLP-powered chatbot systems.
             </p>
 
-            <button
-              ref={btnRef}
+            <a
+              href='/contact'
               className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
             >
               Build with GenAI
-            </button>
+            </a>
           </div>
 
           {/* 🧠 Right Image */}

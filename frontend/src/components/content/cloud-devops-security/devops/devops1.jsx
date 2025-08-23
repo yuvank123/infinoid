@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
-import sampleImg from '../../../../../public/images/crmerp.webp'; // Use a DevOps/CI-CD visual
+import sampleImg from '../../../../../public/images/devopsimage.png'; // Use a DevOps/CI-CD visual
 
 const DevOps1 = () => {
     const rotate = useMotionValue(0);
@@ -79,12 +79,12 @@ const DevOps1 = () => {
                             Streamline your development lifecycle with CI/CD automation, scalable infrastructure as code, and secure DevOps workflows that drive faster innovation.
                         </p>
 
-                        <button
-                            ref={btnRef}
+                        <a
+                            href='/contact'
                             className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
                         >
                             Explore DevOps & CI/CD Services
-                        </button>
+                        </a>
                     </div>
 
                     {/* 📷 Right Image */}

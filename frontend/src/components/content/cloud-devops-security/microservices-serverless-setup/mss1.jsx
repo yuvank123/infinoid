@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
-import sampleImg from '../../../../../public/images/crmerp.webp'; // Add a relevant microservices/serverless image
+import sampleImg from '../../../../../public/images/microimage.png'; // Add a relevant microservices/serverless image
 
 const MSS1 = () => {
     const rotate = useMotionValue(0);
@@ -79,12 +79,12 @@ const MSS1 = () => {
                             Leverage loosely coupled services and event-driven serverless computing to build fault-tolerant, scalable, and efficient cloud-native applications.
                         </p>
 
-                        <button
-                            ref={btnRef}
+                        <a
+                            href='/contact'
                             className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
                         >
                             Discover Microservices Strategy
-                        </button>
+                        </a>
                     </div>
 
                     {/* 🖼️ Image */}

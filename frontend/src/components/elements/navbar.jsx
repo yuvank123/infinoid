@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../../../public/images/logo.webp';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -33,21 +34,17 @@ const Navbar = () => {
                 : 'bg-black/10 backdrop-blur-xl backdrop-saturate-150 border-b border-white/10 py-3 rounded-b-2xl'
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-4 w-full flex flex-row items-center justify-between">
+            <div className="max-w-7xl mx-auto px-4 w-full flex flex-row items-center justify-between h-[8vh]">
                 {/* Logo */}
-                <div className="navbar-start">
-                    <Link to="/" className="flex items-center gap-2">
-                        <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-1.5">
-                            <div className="bg-gradient-to-r from-purple-400 to-indigo-500 w-8 h-8 rounded-lg flex items-center justify-center">
-                                <span className="text-white font-bold text-xs">ID</span>
-                            </div>
-                        </div>
-                        <span className="text-xl font-bold bg-gradient-to-r from-purple-300 to-indigo-200 bg-clip-text text-transparent">
-                            Infinoid
-                        </span>
+                <div className="navbar-start overflow-hidden h-[90px]">
+                    <Link to="/" className="flex items-center ">
+                            <img
+                                src={Logo}
+                                alt="Infinoid Logo"
+                                className="h-[200px] object-contain rounded-lg"
+                            />
                     </Link>
                 </div>
-
                 {/* Desktop Navigation */}
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-1">

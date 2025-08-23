@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
-import sampleImg from '../../../../../public/images/crmerp.webp'; // Replace with actual IoT image
+import sampleImg from '../../../../../public/images/iotimage.png'; // Replace with actual IoT image
 
 const IoTSmartSystems = () => {
   const rotate = useMotionValue(0);
@@ -76,12 +76,12 @@ const IoTSmartSystems = () => {
               Harness the power of IoT to build connected environments. From smart homes to industrial automation, integrate real-time sensors, data collection, and intelligent decision-making systems for optimized performance.
             </p>
 
-            <button
-              ref={btnRef}
+            <a
+              href='/contact'
               className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
             >
               Explore IoT Solutions
-            </button>
+            </a>
           </div>
 
           {/* 🌐 Right Image */}

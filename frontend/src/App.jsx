@@ -133,6 +133,10 @@ const List = [
   {
     path: '/clients',
     component: lazy(() => import('./pages/ourclient/ourclientpage.jsx')),
+  },
+  {
+    path: '/policy',
+    component: lazy(() => import('./pages/privacy/privacypolicypage.jsx')),
   }
 ];
 

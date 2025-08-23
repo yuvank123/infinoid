@@ -5,7 +5,7 @@ import {
     FiUserCheck, FiClock, FiBell, FiShield,
     FiMapPin, FiPrinter, FiPieChart, FiCamera, FiFileText
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/2.webp"; // Replace with a relevant VMS flow image
+import Trackpng from "../../../../../public/images/12.svg"; // Replace with a relevant VMS flow image
 
 // 🔹 VMS Feature Stack
 const vmsStack = [

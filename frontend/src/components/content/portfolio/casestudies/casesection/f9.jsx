@@ -79,7 +79,7 @@ const BakeryEcommerceCaseStudy = () => {
       {/* Hero Section */}
       <section className="relative py-15 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h1 className="mt-12 text-3xl md:text-7xl font-bold bg-gradient-to-r p-2 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent unbounded">
+          <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 lato-900 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent">
             Bakery E-Commerce Platform
           </h1>
         </div>

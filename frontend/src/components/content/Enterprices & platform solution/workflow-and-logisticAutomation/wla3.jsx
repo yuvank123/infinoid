@@ -5,7 +5,7 @@ import {
     FiSettings, FiRefreshCcw, FiTruck, FiMap, FiFileText,
     FiCpu, FiClock, FiBarChart2, FiActivity
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/2.webp"; // Replace with relevant logistics/automation flow image
+import Trackpng from "../../../../../public/images/3.svg"; // Replace with relevant logistics/automation flow image
 
 // 🔹 Workflow & Logistics Stack
 const logisticsStack = [

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
-import sampleImg from '../../../../../public/images/crmerp.webp'; // Replace with your actual image
+import sampleImg from '../../../../../public/images/aimlimage.png'; // Replace with your actual image
 
 const AIMLArchitecture = () => {
     const rotate = useMotionValue(0);
@@ -77,12 +77,12 @@ const AIMLArchitecture = () => {
                             Build cutting-edge AI and ML pipelines from data ingestion to deployment. Empower automation, insights, and decision-making with scalable infrastructure and model architectures.
                         </p>
 
-                        <button
-                            ref={btnRef}
+                        <a
+                            href='/contact'
                             className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
                         >
                             Talk to AI Experts
-                        </button>
+                        </a>
                     </div>
 
                     {/* 📷 Right Image */}

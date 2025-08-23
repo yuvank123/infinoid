@@ -11,7 +11,7 @@ import {
     FiCheckSquare,
     FiTrendingUp
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/3.webp"; // Replace with actual CI/CD workflow image
+import Trackpng from "../../../../../public/images/11.svg"; // Replace with actual CI/CD workflow image
 
 // 🔹 DevOps + CI/CD Stack
 const devopsStack = [

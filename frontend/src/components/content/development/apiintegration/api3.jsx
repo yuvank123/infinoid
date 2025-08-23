@@ -5,7 +5,7 @@ import {
     FiSettings, FiLink, FiShield, FiBarChart2,
     FiCloud, FiTool
 } from "react-icons/fi";
-import Trackpng from "../../../../../public/images/2.webp";
+import Trackpng from "../../../../../public/images/6.svg";
 
 const apiStack = [
     {

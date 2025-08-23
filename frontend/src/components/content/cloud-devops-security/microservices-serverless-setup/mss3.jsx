@@ -9,7 +9,7 @@ import {
   FiTrendingUp,
   FiEye
 } from "react-icons/fi";
-import MicroservicesImg from "../../../../../public/images/2.webp"; // Replace with your actual visual
+import MicroservicesImg from "../../../../../public/images/9.svg"; // Replace with your actual visual
 
 const microStack = [
   {

@@ -9,7 +9,7 @@ import {
     FiDatabase,
     FiActivity
 } from "react-icons/fi";
-import CyberImage from "../../../../../public/images/2.webp"; // Replace with actual cybersecurity/compliance visual
+import CyberImage from "../../../../../public/images/7.svg"; // Replace with actual cybersecurity/compliance visual
 
 const complianceStack = [
     {

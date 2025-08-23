@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
-import sampleImg from '../../../../../public/images/cloud.webp'; // Replace with actual image path
+import sampleImg from '../../../../../public/images/cloudimage.png'; // Replace with actual image path
 
 const CloudArchitecture1 = () => {
     const rotate = useMotionValue(0);
@@ -79,12 +79,12 @@ const CloudArchitecture1 = () => {
                             Architect cloud-native systems optimized for performance, availability, and security. Whether it's microservices, containers, or hybrid clouds — we plan for scale.
                         </p>
 
-                        <button
-                            ref={btnRef}
+                        <a
+                            href='/contact'
                             className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
                         >
                             Consult Cloud Architects
-                        </button>
+                        </a>
                     </div>
 
                     {/* 📷 Right Image */}

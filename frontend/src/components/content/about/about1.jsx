@@ -59,7 +59,7 @@ const About1 = () => {
                     >
                         <h1
                             ref={headingRef}
-                            className='text-4xl lg:text-7xl font-bold mb-4 lato-900 leading-tight'
+                            className='text-4xl lg:text-7xl font-bold mb-4 lato-900'
                         >
                             Driving Global Success, One Innovation at a Time!
                         </h1>

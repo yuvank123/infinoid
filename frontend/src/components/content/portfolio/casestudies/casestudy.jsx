@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const AboutUs = () => {
     const sections = [
@@ -58,43 +59,53 @@ const AboutUs = () => {
         }
     ];
 
-    return (
-        <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-white px-4 md:px-6 pt-24 md:pt-32 gap-8 mb-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
-                {sections.map((section, index) => (
-                    <div
-                        key={index}
-                        className="relative w-full h-full flex flex-col rounded-3xl overflow-hidden group transition-all duration-300 hover:scale-[1.01] bg-white/5"
-                    >
-                        <div className="flex flex-col justify-between h-full p-8 md:p-10 border border-white/10 hover:bg-white/10 backdrop-blur-sm">
-                            <div>
-                                <h3 className="text-lg md:text-xl text-purple-300 font-medium mb-3">
-                                    {section.subtitle}
-                                </h3>
-                                <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent mb-5 p-2">
-                                    {section.title}
-                                </h1>
-                                <h2 className="text-md md:text-lg text-purple-100/80 leading-relaxed">
-                                    {section.description}
-                                </h2>
-                            </div>
+return (
+    <div className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-12 pt-24 md:pt-32 gap-12 mb-5">
+      {/* Hero Section */}
+      <div className="text-center max-w-3xl">
+        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-300 via-purple-400 to-purple-400 bg-clip-text text-transparent leading-tight">
+          Crafting Digital Experiences
+        </h1>
+        <p className="text-lg md:text-xl text-white/70 mt-4">
+          Explore how we design and deliver solutions that transform industries.
+        </p>
+      </div>
 
-                            <div className="mt-8 group relative inline-block">
-                                <a
-                                    href={section.link}
-                                    className="relative bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white px-6 py-3 rounded-full text-base font-medium transition-all duration-300 hover:scale-[1.03] hover:shadow-xl"
-                                    title={`Explore our ${section.title} case study`}
-                                >
-                                    Explore Case Study
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+      {/* Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 w-full max-w-7xl">
+        {sections.map((section, index) => (
+          <div
+            key={index}
+            className="relative flex flex-col rounded-3xl overflow-hidden group backdrop-blur-md border border-white/10 bg-gradient-to-br from-white/10 to-white/5 hover:from-purple-900/30 hover:to-blue-900/30 transition-all duration-500 ease-out hover:-translate-y-2 shadow-lg"
+          >
+            <div className="flex flex-col justify-between h-full p-8">
+              <div>
+                <h3 className="text-sm uppercase tracking-wide text-purple-300 font-semibold mb-2">
+                  {section.subtitle}
+                </h3>
+                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-200 to-blue-200 bg-clip-text text-transparent mb-4">
+                  {section.title}
+                </h1>
+                <p className="text-base text-white/70 leading-relaxed">
+                  {section.description}
+                </p>
+              </div>
+
+              <div className="mt-8">
+                <a
+                  href={section.link}
+                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:scale-105"
+                >
+                  Explore Case Study
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
-
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default AboutUs;

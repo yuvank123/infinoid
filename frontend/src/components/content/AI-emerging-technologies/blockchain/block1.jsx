@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
-import sampleImg from '../../../../../public/images/crmerp.webp'; // Replace with your actual blockchain-related image
+import sampleImg from '../../../../../public/images/blockchainimage.png'; // Replace with your actual blockchain-related image
 
 const BlockchainArchitecture = () => {
   const rotate = useMotionValue(0);
@@ -77,12 +77,12 @@ const BlockchainArchitecture = () => {
               From smart contract platforms to enterprise-grade ledgers, we build decentralized ecosystems with transparency, immutability, and trust at their core.
             </p>
 
-            <button
-              ref={btnRef}
+            <a
+              href='/contact'
               className="mt-4 px-6 py-3 text-base sm:text-lg bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white rounded-full shadow-lg hover:brightness-110 transition duration-300"
             >
               Talk to Blockchain Experts
-            </button>
+            </a>
           </div>
 
           {/* 🛠️ Right Image */}
@@ -92,7 +92,7 @@ const BlockchainArchitecture = () => {
               src={sampleImg}
               alt="Blockchain System"
               style={{ rotate, x: xOffset }}
-              className="relative border border-gray-800 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[300px] object-cover rounded-full bg-gradient-to-br from-black via-black to-gray-800 p-5 m-2 shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
+              className="relative border border-gray-800 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[300px] object-cover rounded-full bg-gradient-to-br from-black via-black to-gray-800 px-5 m-2 shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
             />
           </div>
         </div>
@@ -106,13 +106,13 @@ const BlockchainArchitecture = () => {
             src={sampleImg}
             alt="Distributed Ledger"
             style={{ rotate, x: xOffset }}
-            className="relative border border-gray-800 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[300px] object-cover rounded-full bg-gradient-to-br from-black via-black to-gray-800 p-5 m-2 -left-300 shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
+            className="relative border border-gray-800 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[300px] object-cover rounded-full bg-gradient-to-br from-black via-black to-gray-800 px-5 m-2 -left-300 shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
           />
           <motion.img
             src={sampleImg}
             alt="Smart Contract Visual"
             style={{ rotate, x: xOffset }}
-            className="relative border border-gray-800 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[300px] object-cover rounded-full bg-gradient-to-br from-black via-black to-gray-800 p-5 m-2 -left-100 shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
+            className="relative border border-gray-800 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[300px] object-cover rounded-full bg-gradient-to-br from-black via-black to-gray-800 px-5 m-2 -left-100 shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
           />
         </div>
       </div>

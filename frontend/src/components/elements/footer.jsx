@@ -31,7 +31,7 @@ import {
     FaGamepad,
     FaGlobe,
 } from "react-icons/fa";
-import Logo from "../../../public/images/msme.webp";
+import Logo from "../../../public/images/logo.webp";
 
 const Footer = () => {
     const [openDropdown, setOpenDropdown] = useState(null);

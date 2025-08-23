@@ -42,10 +42,13 @@ const Home1 = () => {
         />
 
       {/* Hero Section */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-[90vh] px-6 text-center lg:top-20">
-        <h1 className="text-5xl sm:text-6xl lg:text-8xl md:tracking-[4px] md:leading-24 bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text drop-shadow-md lato-900">
-          Innovative IT Solutions<br className="hidden md:block" />
-          for Modern <span className="bg-gradient-to-b from-[#6331c8] via-[#8752bb] to-[#b263f6] text-transparent bg-clip-text">Businesses</span>
+      <div className="relative z-10 flex flex-col items-start justify-items-start h-[90vh] px-6 top-30 md:top-50 lg:top-40 lg:left-5">
+        <div className='flex flex-col justify-center items-center max-w-2xl px-3 rounded-4xl mb-6'>
+            <h3 className='text-2xl sm:text-4xl text-gray-300'>AI-Powered Innovation</h3>
+        </div>
+        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-8xl bg-gradient-to-b from-gray-200 to-gray-400 text-transparent bg-clip-text drop-shadow-md lato-900">
+          Agile & Scalable IT Services<br className="hidden md:block" />
+          for <span className="bg-gradient-to-b from-[#6331c8] via-[#8752bb] to-[#b263f6] text-transparent bg-clip-text">Businesses</span> Growth
         </h1>
         <p className="mt-6 max-w-2xl text-lg sm:text-xl text-gray-200 font-light">
           Building scalable, secure, and future-ready technology solutions that empower your digital transformation.
