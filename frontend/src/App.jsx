@@ -164,17 +164,20 @@ const App = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"
-        className="fixed bottom-6 right-6 z-20 p-2 rounded-full transition-all lg:hover:scale-110 hover:scale-95 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10"
+        className="fixed bottom-8 right-8 z-20 rounded-full transition-transform hover:scale-105"
       >
-        <img
-          src={Whats}
-          alt="WhatsApp icon - Chat with us"
-          className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16"
-          width="64"
-          height="64"
-        />
+        {/* Wrapper keeps size stable across breakpoints */}
+        <div className="w-16 h-16 flex items-center justify-center">
+          <img
+            src={Whats}
+            alt="WhatsApp icon - Chat with us"
+            className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16"
+            width="64"
+            height="64"
+            loading="lazy"
+          />
+        </div>
       </a>
-
     </div>
   );
 };
