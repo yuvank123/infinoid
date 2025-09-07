@@ -338,6 +338,8 @@ const Footer = () => {
                                     <a
                                         href="https://www.linkedin.com/company/infinoid-technologies/?viewAsMember=true"
                                         target="_blank"
+                                        alt="Follow Infinoid Technologies on LinkedIn"
+                                        aria-label="Infinoid Technologies on LinkedIn"
                                         rel="noopener noreferrer"
                                         className="w-9 h-9 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                                     >
@@ -346,6 +348,8 @@ const Footer = () => {
                                     <a
                                         href="https://x.com/infinoid_tech"
                                         target="_blank"
+                                        alt="Follow Infinoid Technologies on X (Twitter)"
+                                        aria-label="Infinoid Technologies on X (Twitter)"
                                         rel="noopener noreferrer"
                                         className="w-9 h-9 bg-gradient-to-r from-sky-500 to-sky-600 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                                     >
