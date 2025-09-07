@@ -120,14 +120,6 @@ const WebProcessWithUIUXStack = () => {
                 />
             </Helmet>
 
-            <div className="absolute z-0 h-full w-full border-0 border-amber-50 hidden flex-col justify-center items-center animate-pulse md:flex">
-                <div className="border-40 md:border-100 border-purple-500 rounded-full h-[900vh] w-[80vw] md:h-[400vh] md:w-[80vw] opacity-40 animate-pulse flex flex-col justify-center items-center">
-                    <div className="border-30 md:border-80 border-purple-700 rounded-full h-[750vh] w-[60vw] md:h-[350vh] md:w-[60vw]  opacity-40 flex flex-col justify-center items-center">
-                        <div className="border-20 md:border-60 border-purple-800 rounded-full h-[900vh] w-[40vw] md:h-[300vh] md:w-[40vw] opacity-40"></div>
-                    </div>
-                </div>
-            </div>
-
             <div className="relative w-full min-h-screen flex flex-col items-center px-4 py-20">
                 <div className="text-center mb-12 max-w-4xl">
                     <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-4 unbounded">

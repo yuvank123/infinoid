@@ -92,10 +92,10 @@ const BakeryEcommerceCaseStudy = () => {
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technology designed a complete E-Commerce platform tailored for artisan bakeries and home-based dessert businesses. With elegant UI and seamless backend automation, this system transforms how bakeries handle online orders, deliveries, and product showcases.
+            Infinoid Technologies designed a complete E-Commerce platform tailored for artisan bakeries and home-based dessert businesses. With elegant UI and seamless backend automation, this system transforms how bakeries handle online orders, deliveries, and product showcases.
           </p>
           <p className="text-xl italic text-blue-300">
-            "From oven to doorstep — sell sweet, sell smart with Infinoid."
+            "From oven to doorstep — sell sweet, sell smart with Infinoid Technologies."
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center mt-20 gap-2">
@@ -227,7 +227,7 @@ const BakeryEcommerceCaseStudy = () => {
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-blue-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid?
+            🌟 Why Infinoid Technologies?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

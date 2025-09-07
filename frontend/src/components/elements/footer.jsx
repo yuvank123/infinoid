@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Startupindia from "../../../public/images/startupindia.webp";
-import MSME from "../../../public/images/msme.webp";
 import {
+    FaBuilding,
     FaLinkedin,
     FaTwitter,
     FaEnvelope,
@@ -32,6 +31,7 @@ import {
     FaGlobe,
 } from "react-icons/fa";
 import Logo from "../../../public/images/logo.webp";
+import Footerimage from "../../../public/images/footerimage.webp"
 
 const Footer = () => {
     const [openDropdown, setOpenDropdown] = useState(null);
@@ -190,20 +190,6 @@ const Footer = () => {
                             <p className="text-sm text-gray-300 leading-relaxed">
                                 Transforming businesses through innovative technology solutions and digital excellence.
                             </p>
-
-                            {/* Certifications */}
-                            <div className="md:flex-col gap-4 pt-2 hidden md:flex">
-                                <img
-                                    alt="Startup India"
-                                    src={Startupindia}
-                                    className="w-40 h-auto opacity-80 hover:opacity-100 transition-opacity hover:transform hover:scale-105"
-                                />
-                                <img
-                                    alt="MSME"
-                                    src={MSME}
-                                    className="w-40 h-auto opacity-80 hover:opacity-100 transition-opacity hover:transform hover:scale-105 "
-                                />
-                            </div>
                         </div>
 
                         {/* Services Dropdown */}
@@ -270,14 +256,25 @@ const Footer = () => {
                                 ))}
                             </div>
                         </div>
+                        <div>
+                            <img
+                                src={Footerimage}
+                                alt="footer-side image"
+                                className="w-80 h-auto hidden lg:block"
+                            />
+                        </div>
 
-                        {/* Contact Info */}
-                        <div className="space-y-4">
-                            <h2 className="text-lg font-semibold text-white mb-3 relative inline-block">
-                                <span className="relative z-10 text-[15px] unbounded">Contact Us</span>
-                                <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
-                            </h2>
+                    </div>
 
+                    {/* Contact Us Section */}
+                    <div className="space-y-4 mb-8">
+                        <h2 className="text-lg font-semibold text-white mb-3 relative inline-block">
+                            <span className="relative z-10 text-[15px] unbounded">Contact Us</span>
+                            <span className="absolute bottom-0 left-0 w-full h-[0px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full"></span>
+                        </h2>
+
+                        {/* Grid for contact items */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 {/* Address */}
                                 <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
@@ -288,47 +285,52 @@ const Footer = () => {
                                         Unit No. C-101, Exotica East Square, Ghaziabad - 201014
                                     </p>
                                 </div>
+                                <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md flex items-center justify-center mt-1">
+                                        <FaBuilding className="text-white text-sm" />
+                                    </div>
+                                    <p className="text-sm text-gray-300 leading-relaxed">
+                                        B-1110, Bhutani Alphathum, Sector 90, Noida, Uttar Pradesh – 201305
+                                    </p>
+                                </div>
+                                {/* Phone */}
+                                <div className="flex items-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-md flex items-center justify-center">
+                                        <FaPhone className="text-white text-sm" />
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="text-sm text-gray-300">(+91) 9871973348</span>
+                                        <span className="text-sm text-gray-300">(+91) 9227088395</span>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div className="space-y-4">
                                 {/* Email */}
                                 <div className="flex flex-col gap-4">
                                     <a
                                         href="mailto:sales@infinoid.com"
-                                        aria-label="Email sales at infinoid.com"
-                                        className="flex items-center gap-4 p-4 min-h-[48px] min-w-[48px] rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                        className="flex items-center gap-4 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
                                     >
                                         <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-md flex items-center justify-center">
                                             <FaEnvelope className="text-white text-base" />
                                         </div>
-                                        <span className="text-base text-gray-200 hover:text-white leading-relaxed">
+                                        <span className="text-base text-gray-200 hover:text-white">
                                             sales@infinoid.com
                                         </span>
                                     </a>
 
                                     <a
                                         href="mailto:info@infinoid.com"
-                                        aria-label="Email info at infinoid.com"
-                                        className="flex items-center gap-4 p-4 min-h-[48px] min-w-[48px] rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                        className="flex items-center gap-4 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
                                     >
                                         <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-md flex items-center justify-center">
                                             <FaEnvelope className="text-white text-base" />
                                         </div>
-                                        <span className="text-base text-gray-200 hover:text-white leading-relaxed">
+                                        <span className="text-base text-gray-200 hover:text-white">
                                             info@infinoid.com
                                         </span>
                                     </a>
-                                </div>
-                                
-                                {/* Phone */}
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex items-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
-                                        <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-md flex items-center justify-center">
-                                            <FaPhone className="text-white text-sm" />
-                                        </div>
-                                        <div className="flex flex-col justify-center items-center">
-                                            <span className="text-sm text-gray-300">(+91) 9871973348</span>
-                                            <span className="text-sm text-gray-300">(+91) 9227088395</span>
-                                        </div>
-                                    </div>
                                 </div>
 
                                 {/* Social Media */}
@@ -337,27 +339,23 @@ const Footer = () => {
                                         href="https://www.linkedin.com/company/infinoid-technologies/?viewAsMember=true"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        aria-label="Visit Infinoid Technologies on LinkedIn"
-                                        title="LinkedIn - Infinoid Technologies"
                                         className="w-9 h-9 bg-gradient-to-r from-blue-600 to-blue-700 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                                     >
-                                        <FaLinkedin className="text-white text-sm" aria-hidden="true" />
+                                        <FaLinkedin className="text-white text-sm" />
                                     </a>
-
                                     <a
                                         href="https://x.com/infinoid_tech"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        aria-label="Follow Infinoid Technologies on Twitter (X)"
-                                        title="Twitter - Infinoid Technologies"
                                         className="w-9 h-9 bg-gradient-to-r from-sky-500 to-sky-600 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                                     >
-                                        <FaTwitter className="text-white text-sm" aria-hidden="true" />
+                                        <FaTwitter className="text-white text-sm" />
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                     {/* Bottom Section */}
                     <div className="border-t border-white/10 pt-6">

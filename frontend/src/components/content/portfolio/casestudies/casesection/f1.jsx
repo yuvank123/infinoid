@@ -64,10 +64,10 @@ const ARVRCaseStudy = () => {
             🚀 Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technology developed a cutting-edge AR/VR experience platform that redefined immersive customer engagement. Built for entertainment, education, and retail, this project offered real-time 3D visualization, AR integration, and VR-enabled simulations for next-gen interaction.
+            Infinoid Technologies developed a cutting-edge AR/VR experience platform that redefined immersive customer engagement. Built for entertainment, education, and retail, this project offered real-time 3D visualization, AR integration, and VR-enabled simulations for next-gen interaction.
           </p>
           <p className="text-xl italic text-purple-300">
-            "Enter a world beyond reality — with Infinoid's immersive AR/VR solutions."
+            "Enter a world beyond reality — with Infinoid Technologies' immersive AR/VR solutions."
           </p>
         </div>
         <div className="flex justify-center mt-20">
@@ -194,7 +194,7 @@ const ARVRCaseStudy = () => {
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-red-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid?
+            🌟 Why Infinoid Technologies?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

@@ -1,10 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../../public/images/logo.webp';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isServicesOpen, setIsServicesOpen] = useState(false);
+    const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
+    const timeRef = useRef(null);
+    const portfolioRef = useRef(null);
+
+    const handleportfolioOpen = () => {
+        clearTimeout(portfolioRef.current);
+        setIsPortfolioOpen(true);
+    }
+
+    const handleportfolioclose = () => {
+        clearTimeout(portfolioRef.current);
+        portfolioRef.current = setTimeout(() => {
+            setIsPortfolioOpen(false);
+        }, 100);
+    }
+
+    const handlemouseenter = () => {
+        clearTimeout(timeRef.current);
+        setIsServicesOpen(true);
+    }
+
+    const handlemouseleave = () => {
+        clearTimeout(timeRef.current);
+        timeRef.current = setTimeout(() => {
+            setIsServicesOpen(false);
+        }, 100);
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -61,19 +89,37 @@ const Navbar = () => {
                         </li>
 
                         {/* Services Dropdown */}
-                        <li className="dropdown dropdown-hover">
+                        <li
+                            className=" dropdown relative"
+                            onMouseEnter={handlemouseenter}
+                            onMouseLeave={handlemouseleave}
+                        >
                             <label
                                 tabIndex={0}
                                 className="text-white/90 hover:text-white cursor-pointer flex items-center px-4 py-2 rounded-lg hover:bg-white/5 transition-colors"
                             >
                                 Services
-                                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                                <svg
+                                    className="ml-1 w-4 h-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M19 9l-7 7-7-7"
+                                    />
                                 </svg>
                             </label>
+
+                            {/* Dropdown */}
                             <div
-                                tabIndex={0}
-                                className="dropdown-content menu p-6 w-[70rem] top-13 -ml-[400px] border-1 border-gray-700 rounded-3xl bg-gray-800/40 backdrop-blur-lg"
+                                className={`absolute z-50 menu p-6 w-[70rem] top-13 -ml-[400px] border border-gray-700 rounded-3xl 
+          bg-gray-800/40 backdrop-blur-lg transition-all duration-300 ease-in-out
+          ${isServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"}
+        `}
                             >
                                 <div className="grid grid-cols-4 gap-6">
                                     <div className="p-5 border-1 border-gray-700 rounded-3xl bg-gradient-to-br from-gray-800 via-gray-950 to-black">
@@ -184,7 +230,10 @@ const Navbar = () => {
                         </li>
 
                         {/* Portfolio Dropdown */}
-                        <li className="dropdown dropdown-hover">
+                        <li className="dropdown relative"
+                            onMouseEnter={handleportfolioOpen}
+                            onMouseLeave={handleportfolioclose}
+                        >
                             <label
                                 tabIndex={0}
                                 className="text-white/90 hover:text-white cursor-pointer flex items-center px-4 py-2 rounded-lg hover:bg-white/5 transition-colors"
@@ -195,9 +244,9 @@ const Navbar = () => {
                                 </svg>
                             </label>
                             <div
-                                tabIndex={0}
-                                className="dropdown-content menu p-4 border-1 border-gray-600  rounded-3xl bg-gradient-to-br from-gray-800 via-gray-950 to-black backdrop-blur-lg mt-3 top-13 w-38"
-                            >
+                                className={`absolute z-50 menu p-6 w-[15rem] top-16 -ml-[200px] border border-gray-700 rounded-3xl bg-gradient-to-br from-gray-800 via-gray-950 to-black backdrop-blur-lg transition-all duration-300 ease-in-out
+          ${isPortfolioOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"}
+        `}>
                                 <div className="space-y-2">
                                     <Link to="/case-studies" className="py-2 px-3 rounded-lg hover:bg-white/5 hover:text-purple-300 transition-all flex items-center">
                                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

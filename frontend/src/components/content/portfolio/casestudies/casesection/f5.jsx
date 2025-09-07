@@ -54,10 +54,10 @@ const InventoryManagementCaseStudy = () => {
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technology developed a comprehensive Inventory Management System that provides real-time tracking of stock levels, automates restocking processes, and optimizes supply chain operations. Designed for scalability, this solution streamlines operations, reduces manual errors, and enhances business efficiency.
+            Infinoid Technologies developed a comprehensive Inventory Management System that provides real-time tracking of stock levels, automates restocking processes, and optimizes supply chain operations. Designed for scalability, this solution streamlines operations, reduces manual errors, and enhances business efficiency.
           </p>
           <p className="text-xl italic text-purple-300">
-            "Transform your inventory into a strategic asset — Infinoid redefines supply chain management."
+            "Transform your inventory into a strategic asset — Infinoid Technologies redefines supply chain management."
           </p>
         </div>
         {/* Overview Image */}
@@ -185,7 +185,7 @@ const InventoryManagementCaseStudy = () => {
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-purple-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid?
+            🌟 Why Infinoid Technologies?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

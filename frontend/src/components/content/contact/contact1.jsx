@@ -75,11 +75,12 @@ const Contact1 = () => {
           ))}
 
           {/* Center Button */}
-          <button
+          <a
+            href='https://calendly.com/infinoidtech/infinoid-technologies'
             className="relative z-10 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-md hover:bg-gray-100 transition"
           >
             Schedule A Call
-          </button>
+          </a>
         </div>
 
         {/* Background Glow */}

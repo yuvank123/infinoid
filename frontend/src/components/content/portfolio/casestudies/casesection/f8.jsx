@@ -92,10 +92,10 @@ const CRMCaseStudy = () => {
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technology developed a powerful and intuitive CRM platform that centralizes customer interactions, automates sales processes, and empowers teams with data-driven insights. Tailored for growing businesses, the system streamlines operations from lead capture to client retention.
+            Infinoid Technologies developed a powerful and intuitive CRM platform that centralizes customer interactions, automates sales processes, and empowers teams with data-driven insights. Tailored for growing businesses, the system streamlines operations from lead capture to client retention.
           </p>
           <p className="text-xl italic text-blue-300">
-            "Turning relationships into revenue—Infinoid’s CRM unlocks smarter customer engagement."
+            "Turning relationships into revenue—Infinoid Technologies CRM unlocks smarter customer engagement."
           </p>
         </div>
         {/* Overview Image */}
@@ -228,7 +228,7 @@ const CRMCaseStudy = () => {
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-purple-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid?
+            🌟 Why Infinoid Technologies?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

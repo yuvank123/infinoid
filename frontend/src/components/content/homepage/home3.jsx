@@ -86,13 +86,8 @@ const Home3 = () => {
         <meta property="og:title" content="AI Solutions & Cloud Automation | Tech Innovators" />
         <meta property="og:description" content="Explore cutting-edge AI automation, scalable cloud integrations, and real-time analytics to transform your digital future." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/home3" />
-        <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Solutions & Cloud Automation" />
-        <meta name="twitter:description" content="Transform your digital future with next-gen AI and cloud innovations." />
-        <meta name="twitter:image" content="https://yourdomain.com/preview.jpg" />
-        <link rel="canonical" href="https://yourdomain.com/home3" />
+        <meta property="og:url" content="https://infinoid.com/"/>
+        <link rel="canonical" href="https://infinoid.com/" />
       </Helmet>
 
       {/* First Section: AI/Cloud Features */}

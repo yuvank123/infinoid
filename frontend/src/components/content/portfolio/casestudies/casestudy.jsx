@@ -2,64 +2,89 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 
 const AboutUs = () => {
-    const sections = [
-        {
-            title: "Immersive AR/VR Experience Platform",
-            link: "/case-studies/portfolio1",
-            subtitle: "Transforming Immersive Experiences",
-            description: "Discover our next-generation AR/VR platform that delivers real-time 3D visualization, AR integration, and VR-enabled simulations for a truly immersive digital experience."
-        },
-        {
-            title: "FurryCart: E-Commerce for Pets",
-            link: "/case-studies/portfolio2",
-            subtitle: "Revolutionizing Pet Care Shopping",
-            description: "Explore our robust online pet shop platform offering personalized recommendations, secure transactions, and efficient inventory management for pet lovers."
-        },
-        {
-            title: "Business Analytical Dashboard",
-            link: "/case-studies/portfolio3",
-            subtitle: "Turning Data into Insights",
-            description: "Experience our dynamic analytical dashboard that transforms raw data into actionable insights, enabling businesses to drive revenue and growth."
-        },
-        {
-            title: "Payroll Management System",
-            link: "/case-studies/portfolio4",
-            subtitle: "Streamlining Payroll Processes",
-            description: "Learn how our automated payroll system ensures compliance, enhances data security, and provides real-time financial insights for businesses of all sizes."
-        },
-        {
-            title: "Inventory Management System",
-            link: "/case-studies/portfolio5",
-            subtitle: "Optimizing Supply Chain Operations",
-            description: "See how our inventory management solution provides real-time tracking, automated restocking, and data-driven analytics to optimize supply chain efficiency."
-        },
-        {
-            title: "Visitor Management System (VMS)",
-            link: "/case-studies/portfolio6",
-            subtitle: "Securing Entry Points",
-            description: "Our VMS enhances security by managing and tracking visitors with real-time logs, facial recognition, and appointment scheduling."
-        },
-        {
-            title: "Attendance Management System (AMS)",
-            link: "/case-studies/portfolio7",
-            subtitle: "Tracking and Managing Assets",
-            description: "Gain full control over your organization’s assets with features like asset tagging, maintenance scheduling, and depreciation tracking."
-        },
-        {
-            title: "Customer Relationship Management (CRM)",
-            link: "/case-studies/portfolio8",
-            subtitle: "Building Stronger Customer Bonds",
-            description: "Our CRM system helps teams manage customer data, automate workflows, and improve client engagement with insightful analytics."
-        },
-        {
-            title: "Bakery E-Commerce Platform",
-            link: "/case-studies/portfolio9",
-            subtitle: "Delivering Freshness with Every Click",
-            description: "SweetBite is a bakery-focused e-commerce platform offering online ordering, real-time inventory, personalized product recommendations, and seamless delivery tracking to bring freshly baked goods to customers' doorsteps."
-        }
-    ];
+  const sections = [
+    {
+      title: "Immersive AR/VR Experience Platform",
+      link: "/case-studies/portfolio1",
+      subtitle: "Transforming Immersive Experiences",
+      description: "Discover our next-generation AR/VR platform that delivers real-time 3D visualization, AR integration, and VR-enabled simulations for a truly immersive digital experience."
+    },
+    {
+      title: "FurryCart: E-Commerce for Pets",
+      link: "/case-studies/portfolio2",
+      subtitle: "Revolutionizing Pet Care Shopping",
+      description: "Explore our robust online pet shop platform offering personalized recommendations, secure transactions, and efficient inventory management for pet lovers."
+    },
+    {
+      title: "Business Analytical Dashboard",
+      link: "/case-studies/portfolio3",
+      subtitle: "Turning Data into Insights",
+      description: "Experience our dynamic analytical dashboard that transforms raw data into actionable insights, enabling businesses to drive revenue and growth."
+    },
+    {
+      title: "Payroll Management System",
+      link: "/case-studies/portfolio4",
+      subtitle: "Streamlining Payroll Processes",
+      description: "Learn how our automated payroll system ensures compliance, enhances data security, and provides real-time financial insights for businesses of all sizes."
+    },
+    {
+      title: "Inventory Management System",
+      link: "/case-studies/portfolio5",
+      subtitle: "Optimizing Supply Chain Operations",
+      description: "See how our inventory management solution provides real-time tracking, automated restocking, and data-driven analytics to optimize supply chain efficiency."
+    },
+    {
+      title: "Visitor Management System (VMS)",
+      link: "/case-studies/portfolio6",
+      subtitle: "Securing Entry Points",
+      description: "Our VMS enhances security by managing and tracking visitors with real-time logs, facial recognition, and appointment scheduling."
+    },
+    {
+      title: "Attendance Management System (AMS)",
+      link: "/case-studies/portfolio7",
+      subtitle: "Tracking and Managing Assets",
+      description: "Gain full control over your organization’s assets with features like asset tagging, maintenance scheduling, and depreciation tracking."
+    },
+    {
+      title: "Customer Relationship Management (CRM)",
+      link: "/case-studies/portfolio8",
+      subtitle: "Building Stronger Customer Bonds",
+      description: "Our CRM system helps teams manage customer data, automate workflows, and improve client engagement with insightful analytics."
+    },
+    {
+      title: "Bakery E-Commerce Platform",
+      link: "/case-studies/portfolio9",
+      subtitle: "Delivering Freshness with Every Click",
+      description: "SweetBite is a bakery-focused e-commerce platform offering online ordering, real-time inventory, personalized product recommendations, and seamless delivery tracking to bring freshly baked goods to customers' doorsteps."
+    },
+    {
+      title: "cockatooindia.com",
+      link: "https://www.cockatooindia.com/",
+      subtitle: "Fitness Equipment for Home and Gym",
+      description: "Cockatoo India is an e-commerce platform that offers a wide range of gym and fitness equipment, including treadmills, exercise bikes, strength machines, and accessories, making it easy to set up and maintain workouts at home or in fitness centers."
+    },
+    {
+      title: "astroflik.com",
+      link: "https://astroflik.com/",
+      subtitle: "Clothing for Everyday Wear",
+      description: "Astroflik is an online store that offers a variety of clothing options for men and women, including casual wear, formal wear, and accessories, providing simple and reliable choices for daily outfits."
+    },
+    {
+      title: "leunleun.com",
+      link: "https://www.leunleun.com/",
+      subtitle: "Online Shopping Made Simple",
+      description: "Leunleun is a platform that brings together clothing and products from different stores and sellers into one place, making it easier for customers to browse and purchase without switching between multiple sites."
+    },
+    {
+      title: "diriseapp.com",
+      link: "https://diriseapp.com/",
+      subtitle: "E-commerce for All Products",
+      description: "Diriseapp is an online platform that offers a wide range of products from different categories in one place, allowing customers to find and buy items without moving between multiple websites."
+    }
 
-return (
+  ];
+
+  return (
     <div className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-12 pt-24 md:pt-32 gap-12 mb-5">
       {/* Hero Section */}
       <div className="text-center max-w-3xl">

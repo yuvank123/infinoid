@@ -79,9 +79,7 @@ const About1 = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6, duration: 0.5 }}
                         >
-                            Our mission is to empower visionary businesses and digital disruptors,
-                            helping them envision the unseen and accomplish the extraordinary through
-                            next-gen digital solutions.
+                            Our mission is to work closely with businesses to understand their goals, challenges, and opportunities. We aim to provide clear and effective digital solutions that make their work easier, improve the way they operate, and support steady growth over time.
                         </motion.p>
 
                         <motion.button
@@ -109,16 +107,10 @@ const About1 = () => {
                         About Us: Our Journey and Values
                     </h2>
                     <p className='text-lg sm:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto'>
-                        We do not consider ourselves just another software development company;
-                        rather, we consider ourselves the true torchbearers of digital transformation.
+                        We are not just a software development company; we focus on creating digital solutions that bring real value to businesses.
                     </p>
                     <p className='text-lg sm:text-xl text-gray-400 mt-6 leading-relaxed max-w-4xl mx-auto'>
-                        Infinoid is one of the leading software development companies. We started
-                        with a small team of tech enthusiasts, all having a common purpose — to inject
-                        innovation into businesses worldwide and stretch the limits of traditional
-                        tech solutions. In our journey, we evolved and embraced the change positively.
-                        We are still evolving from initial mobile and web app development to next-gen
-                        technologies like AI, ML, Data Science, AR, VR, and more.
+                        Infinoid Technologies is a software development company. We began with a small team of developers who shared a common goal — to bring useful technology into businesses worldwide and improve traditional solutions. Over time, we grew and adapted to new changes. We continue to expand from our early work in mobile and web app development to areas like AI, machine learning, data science, AR, VR, and more.
                     </p>
                 </motion.div>
             </div>
