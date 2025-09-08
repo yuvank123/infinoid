@@ -59,7 +59,7 @@ const About1 = () => {
                     >
                         <h1
                             ref={headingRef}
-                            className='text-4xl lg:text-7xl font-bold mb-4 lato-900'
+                            className='text-4xl md:text-6xl lg:text-7xl font-bold mb-4 lato-900'
                         >
                             Driving Global Success, One Innovation at a Time!
                         </h1>
@@ -82,15 +82,13 @@ const About1 = () => {
                             Our mission is to work closely with businesses to understand their goals, challenges, and opportunities. We aim to provide clear and effective digital solutions that make their work easier, improve the way they operate, and support steady growth over time.
                         </motion.p>
 
-                        <motion.button
-                            className='mt-4 px-6 py-3 bg-gradient-to-br from-purple-400 to-purple-600 text-white font-bold rounded-full transition '
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            whileHover={{ scale: 1.25 }}
-                            transition={{ delay: 0.1, duration: 0.1, ease: 'easeInOut' }}
+                        <a
+                            href="/contact"
+                            className="relative top-6 px-6 py-3 bg-gradient-to-br from-purple-400 to-purple-600 text-white font-bold rounded-full transition"
                         >
                             Let's Connect
-                        </motion.button>
+                        </a>
+
 
                     </motion.div>
                 </div>
@@ -107,10 +105,10 @@ const About1 = () => {
                         About Us: Our Journey and Values
                     </h2>
                     <p className='text-lg sm:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto'>
-                        We are not just a software development company; we focus on creating digital solutions that bring real value to businesses.
+                        Reliable Technology, Real Results
                     </p>
                     <p className='text-lg sm:text-xl text-gray-400 mt-6 leading-relaxed max-w-4xl mx-auto'>
-                        Infinoid Technologies is a software development company. We began with a small team of developers who shared a common goal — to bring useful technology into businesses worldwide and improve traditional solutions. Over time, we grew and adapted to new changes. We continue to expand from our early work in mobile and web app development to areas like AI, machine learning, data science, AR, VR, and more.
+                        Infinoid Technologies is a trusted technology solutions company delivering software that helps businesses run smoothly and grow steadily. We provide enterprise software, CRM, ERP, HRMS, payroll automation, visitor management, and custom web and mobile applications. Our experienced team focuses on practical solutions that simplify operations, improve efficiency, and support long-term business success.
                     </p>
                 </motion.div>
             </div>

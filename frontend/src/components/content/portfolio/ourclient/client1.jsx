@@ -4,14 +4,21 @@ import C2 from "../../../../../public/images/ARD.webp";
 import C3 from "../../../../../public/images/Mahi.webp";
 import C4 from "../../../../../public/images/SSOS.webp";
 import C5 from "../../../../../public/images/montorx.webp";
+import C6 from "../../../../../public/images/plus360.webp";
+import C7 from "../../../../../public/images/beetal.webp";
+import C8 from "../../../../../public/images/ventures.webp";
+import C9 from "../../../../../public/images/revup.webp";
+import C10 from "../../../../../public/images/fmpg.webp";
+import C11 from "../../../../../public/images/aaram.webp";
+import C12 from "../../../../../public/images/rangmahal.webp";
 
-const logos = [C1, C2, C3, C4, C5];
+const logos = [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12];
 
 const ImageGrid = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <div className="min-h-screen py-10 px-4 flex flex-col items-center justify-center relative top-10 lg:top-0">
+    <div className="min-h-screen py-10 px-4 flex flex-col items-center justify-center relative top-15 lg:top-15">
       <h1 className="text-5xl md:text-8xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-300 to-purple-400 mb-10 text-center lato-300 ">
         Our Clients
       </h1>
