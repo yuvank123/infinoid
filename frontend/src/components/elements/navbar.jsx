@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from 'react-router-dom';
 import Logo from '../../../public/images/logo.webp';
 
@@ -310,122 +311,163 @@ const Navbar = () => {
 
             {/* Mobile Menu Overlay */}
             {isMenuOpen && (
-                <div className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm lg:hidden" onClick={() => setIsMenuOpen(false)}>
-                    <div
-                        className="absolute top-0 right-0 w-3/4 max-w-xs h-[calc(110vh-4rem)] bg-[rgba(43,0,71,0.95)] backdrop-blur-xl shadow-2xl overflow-y-auto p-6 border-l border-white/10"
-                        onClick={e => e.stopPropagation()}
+                <AnimatePresence>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="fixed inset-0 z-50 bg-black/70 backdrop-blur-md lg:hidden"
+                        onClick={() => setIsMenuOpen(false)}
                     >
-                        {/* Close button for mobile menu */}
-                        <div className="flex justify-end mb-4">
-                            <button
-                                onClick={() => setIsMenuOpen(false)}
-                                className="btn btn-ghost btn-circle text-white"
-                                aria-label="Close menu"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
+                        <motion.div
+                            initial={{ x: "100%" }}
+                            animate={{ x: 0 }}
+                            exit={{ x: "100%" }}
+                            transition={{ type: "spring", stiffness: 80, damping: 20 }}
+                            className="absolute top-0 right-0 w-full h-screen
+                   bg-gradient-to-br from-[#0e0e11]/95 to-[#1a1a1d]/95
+                   backdrop-blur-2xl shadow-2xl overflow-y-auto
+                   p-8 border-l border-white/10 rounded-l-2xl"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            {/* Close button */}
+                            <div className="flex justify-end mb-8">
+                                <button
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition"
+                                    aria-label="Close menu"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-6 w-6 text-white"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
 
-                        <ul className="space-y-4">
-                            <li>
+                            {/* Grid Menu */}
+                            <div className="grid gap-10">
+                                {/* Simple links */}
                                 <Link
                                     to="/about"
-                                    className="text-white/90 hover:text-white text-lg py-3 block"
+                                    className="text-white text-2xl font-semibold tracking-wide hover:text-purple-400 transition"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     About Us
                                 </Link>
-                            </li>
 
-                            <li>
-                                <details open>
-                                    <summary className="text-white/90 hover:text-white text-lg py-3 list-none">Services</summary>
-                                    <ul className="p-2 bg-white/5 rounded-lg mt-2 space-y-3">
-                                        <li className="mb-3">
-                                            <span className="text-purple-300 font-semibold">Product Engineering</span>
-                                            <ul className="pl-2 space-y-1">
-                                                <li><Link to="/services/webmobile-dev" onClick={() => setIsMenuOpen(false)}>Web & Mobile App</Link></li>
-                                                <li><Link to="/services/uiux" onClick={() => setIsMenuOpen(false)}>UI/UX Design</Link></li>
-                                                <li><Link to="/services/csd" onClick={() => setIsMenuOpen(false)}>Custom Software</Link></li>
-                                                <li><Link to="/services/api-integration" onClick={() => setIsMenuOpen(false)}>API Integrations</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="mb-3">
-                                            <span className="text-cyan-300 font-semibold">Enterprise Platforms</span>
-                                            <ul className="pl-2 space-y-1">
-                                                <li><Link to="/services/crm-erp" onClick={() => setIsMenuOpen(false)}>CRM & ERP</Link></li>
-                                                <li><Link to="/services/vms" onClick={() => setIsMenuOpen(false)}>Visitor Management</Link></li>
-                                                <li><Link to="/services/Hrms-adminportals" onClick={() => setIsMenuOpen(false)}>HRMS Portals</Link></li>
-                                                <li><Link to="/services/wla" onClick={() => setIsMenuOpen(false)}>Workflow Automation</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <span className="text-yellow-300 font-semibold">Cloud, DevOps & Security</span>
-                                            <ul className="pl-2 space-y-1">
-                                                <li><Link to="/services/cloud" onClick={() => setIsMenuOpen(false)}>Cloud Architecture</Link></li>
-                                                <li><Link to="/services/devops" onClick={() => setIsMenuOpen(false)}>DevOps</Link></li>
-                                                <li><Link to="/services/Microservices" onClick={() => setIsMenuOpen(false)}>Microservices</Link></li>
-                                                <li><Link to="/services/cybersecurity" onClick={() => setIsMenuOpen(false)}>Cybersecurity</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <span className="text-pink-300 font-semibold">AI & Emerging Tech</span>
-                                            <ul className="pl-2 space-y-1">
-                                                <li><Link to="/services/aiml" onClick={() => setIsMenuOpen(false)}>AI & ML</Link></li>
-                                                <li><Link to="/services/GenAI-Chatbot" onClick={() => setIsMenuOpen(false)}>Generative AI</Link></li>
-                                                <li><Link to="/services/blockchain" onClick={() => setIsMenuOpen(false)}>Blockchain</Link></li>
-                                                <li><Link to="/services/arvr" onClick={() => setIsMenuOpen(false)}>AR/VR</Link></li>
-                                                <li><Link to="/services/iot" onClick={() => setIsMenuOpen(false)}>IoT Systems</Link></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </details>
-                            </li>
+                                {/* Services */}
+                                <div>
+                                    <h3 className="text-white text-2xl font-semibold mb-6">
+                                        Services
+                                    </h3>
+                                    <div className="grid gap-8">
+                                        {/* Category */}
+                                        <div className='border-2 border-gray-700 p-4 rounded-2xl bg-gradient-to-br from-gray-800 via-gray-950 to-black'>
+                                            <span className="text-purple-400 font-semibold block mb-3 text-lg">
+                                                Product Engineering
+                                            </span>
+                                            <div className="grid grid-cols-2 gap-2 text-white/80 text-sm">
+                                                <Link to="/services/webmobile-dev" className="hover:text-purple-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Web & Mobile App</Link>
+                                                <Link to="/services/uiux" className="hover:text-purple-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>UI/UX Design</Link>
+                                                <Link to="/services/csd" className="hover:text-purple-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Custom Software</Link>
+                                                <Link to="/services/api-integration" className="hover:text-purple-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>API Integrations</Link>
+                                            </div>
+                                        </div>
 
-                            <li>
+                                        <div className='border-2 border-gray-700 p-4 rounded-2xl bg-gradient-to-br from-gray-800 via-gray-950 to-black'>
+                                            <span className="text-cyan-400 font-semibold block mb-3 text-lg">
+                                                Enterprise Platforms
+                                            </span>
+                                            <div className="grid grid-cols-2 gap-2 text-white/80 text-sm">
+                                                <Link to="/services/crm-erp" className="hover:text-cyan-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>CRM & ERP</Link>
+                                                <Link to="/services/vms" className="hover:text-cyan-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Visitor Management</Link>
+                                                <Link to="/services/Hrms-adminportals" className="hover:text-cyan-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>HRMS Portals</Link>
+                                                <Link to="/services/wla" className="hover:text-cyan-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Workflow Automation</Link>
+                                            </div>
+                                        </div>
+
+                                        <div className='border-2 border-gray-700 p-4 rounded-2xl bg-gradient-to-br from-gray-800 via-gray-950 to-black'>
+                                            <span className="text-yellow-400 font-semibold block mb-3 text-lg">
+                                                Cloud, DevOps & Security
+                                            </span>
+                                            <div className="grid grid-cols-2 gap-2 text-white/80 text-sm">
+                                                <Link to="/services/cloud" className="hover:text-yellow-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Cloud Architecture</Link>
+                                                <Link to="/services/devops" className="hover:text-yellow-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>DevOps</Link>
+                                                <Link to="/services/Microservices" className="hover:text-yellow-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Microservices</Link>
+                                                <Link to="/services/cybersecurity" className="hover:text-yellow-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Cybersecurity</Link>
+                                            </div>
+                                        </div>
+
+                                        <div className='border-2 border-gray-700 p-4 rounded-2xl bg-gradient-to-br from-gray-800 via-gray-950 to-black'>
+                                            <span className="text-pink-400 font-semibold block mb-3 text-lg">
+                                                AI & Emerging Tech
+                                            </span>
+                                            <div className="grid grid-cols-2 gap-2 text-white/80 text-sm">
+                                                <Link to="/services/aiml" className="hover:text-pink-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>AI & ML</Link>
+                                                <Link to="/services/GenAI-Chatbot" className="hover:text-pink-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Generative AI</Link>
+                                                <Link to="/services/blockchain" className="hover:text-pink-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Blockchain</Link>
+                                                <Link to="/services/arvr" className="hover:text-pink-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>AR/VR</Link>
+                                                <Link to="/services/iot" className="hover:text-pink-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>IoT Systems</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Other Links */}
                                 <Link
                                     to="/career"
-                                    className="text-white/90 hover:text-white text-lg py-3 block"
+                                    className="text-white text-2xl font-semibold tracking-wide hover:text-purple-400 transition"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     Career
                                 </Link>
-                            </li>
 
-                            <li>
-                                <details>
-                                    <summary className="text-white/90 hover:text-white text-lg py-3 list-none">Portfolio</summary>
-                                    <ul className="p-2 bg-white/5 rounded-lg mt-2 space-y-1">
-                                        <li><Link to="/case-studies" className="hover:text-purple-300 block py-2" onClick={() => setIsMenuOpen(false)}>Case Studies</Link></li>
-                                        <li><Link to="/clients" className="hover:text-purple-300 block py-2" onClick={() => setIsMenuOpen(false)}>Our Clients</Link></li>
-                                    </ul>
-                                </details>
-                            </li>
+                                <div>
+                                    <h3 className="text-white text-2xl font-semibold mb-4">
+                                        Portfolio
+                                    </h3>
+                                    <div className="grid grid-cols-2 gap-4 text-white/80 text-sm border-2 border-gray-700 p-4 rounded-2xl bg-gradient-to-br from-gray-800 via-gray-950 to-black">
+                                        <Link to="/case-studies" className="hover:text-purple-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Case Studies</Link>
+                                        <Link to="/clients" className="hover:text-purple-300 md:text-xl" onClick={() => setIsMenuOpen(false)}>Our Clients</Link>
+                                    </div>
+                                </div>
 
-                            <li>
                                 <Link
                                     to="/contact"
-                                    className="text-white/90 hover:text-white text-lg py-3 block"
+                                    className="text-white text-2xl font-semibold tracking-wide hover:text-purple-400 transition"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     Contact Us
                                 </Link>
-                            </li>
 
-                            <li className="pt-4">
-                                <a
-                                    href="https://calendly.com/infinoidtech/infinoid-technologies"
-                                    className="btn bg-gradient-to-r from-[#9058ff] to-[#b663ff] text-white border-none w-full text-center py-3 rounded-lg"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Schedule A Call
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                                {/* CTA */}
+                                <div className="pt-8">
+                                    <a
+                                        href="https://calendly.com/infinoidtech/infinoid-technologies"
+                                        className="block w-full bg-gradient-to-r from-purple-500 to-fuchsia-500 
+                         text-white text-lg font-semibold py-4 rounded-2xl text-center
+                         shadow-lg hover:shadow-fuchsia-500/40 
+                         transform hover:scale-105 transition"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        Schedule A Call
+                                    </a>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                </AnimatePresence>
             )}
         </div>
     );
