@@ -9,21 +9,21 @@ const testimonials = [
     title: 'Founding President : MentorX',
     quote:
       'Infinoid Technologies turned our concept into a polished digital experience with exceptional UI/UX design. They maintained excellent communication and handled every detail with care. Their responsiveness and commitment stood out. From idea to execution, it truly felt like a seamless, collaborative partnership.',
-    img: '/images/t1.webp',
+    img: '/images/t2.webp',
   },
   {
     name: 'Vivek Kumar',
     title: 'Founder & CTO, FMPG',
     quote:
       'We initially approached Infinoid Technologies for their competitive pricing, but the quality of their work is what made us stay. They never compromised on creativity or timelines. The team\'s dedication, clean design choices, and proactive suggestions made our startup journey smooth and successful.',
-    img: '/images/t2.webp',
+    img: '/images/t3.webp',
   },
   {
     name: 'Rajeev Kumar',
     title: 'ARD Secure Facility Management LLP',
     quote:
       'Working with Infinoid Technologies felt like having an in-house tech team. Their ability to adapt quickly, handle changes on the fly, and maintain quality was outstanding. The development cycle was smooth, the communication clear, and the final product exceeded our expectations in every way.',
-    img: '/images/t3.webp',
+    img: '/images/t1.webp',
   },
   {
     name: 'Dr.Nancy Juneja',

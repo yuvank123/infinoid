@@ -1,5 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
+import React, { lazy } from 'react';
 
 
 import GenAI1 from '../../components/content/AI-emerging-technologies/generative-ai/genai1';
@@ -11,33 +10,17 @@ const GenAI3 = lazy(() => import('../../components/content/AI-emerging-technolog
 const GenAI = () => {
   return (
     <div className="bg-black text-white">
-    
+
       <div className="relative h-auto">
         <GenAI1 />
       </div>
+      <div className="relative h-auto">
+        <GenAI2 />
+      </div>
+      <div className="relative h-auto">
+        <GenAI3 />
+      </div>
 
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <GenAI2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <GenAI3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
     </div>
   );
 };

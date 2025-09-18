@@ -1,6 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
-
+import React, { lazy } from 'react';
 
 import Wla1 from '../../components/content/Enterprices & platform solution/workflow-and-logisticAutomation/wla1.jsx';
 
@@ -15,29 +13,13 @@ const wlapage = () => {
       <div className="relative h-auto">
         <Wla1 />
       </div>
-
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <Wla2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <Wla3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
+      <div className="relative h-auto">
+        <Wla2 />
+      </div>
+      <div className="relative h-auto">
+        <Wla3 />
+      </div>
+      
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/elements/navbar.jsx';
 import Footers from './components/elements/footer.jsx';
 import Whats from './../public/images/whatsapp.webp';
+import ScrollToTop from './ScrollToTop.jsx';
 
 const List = [
   {
@@ -149,6 +150,7 @@ const App = () => {
 
       <div className="flex-grow bg-black">
         <Suspense fallback={<div className="text-center">Loading...</div>}>
+          <ScrollToTop />
           <Routes>
             {List.map(({ path, component: Component }, index) => (
               <Route key={index} path={path} element={<Component />} />

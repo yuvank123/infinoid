@@ -1,6 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
-
+import React, { lazy } from 'react';
 
 import Cc1 from '../../components/content/cloud-devops-security/cybersecurity&compliance/cc1';
 
@@ -15,29 +13,13 @@ const cc = () => {
       <div className="relative h-auto">
         <Cc1 />
       </div>
+      <div className="relative h-auto">
+        <Cc2 />
+      </div>
+      <div className="relative h-auto">
+        <Cc3 />
+      </div>
 
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <Cc2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <Cc3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
     </div>
   );
 };

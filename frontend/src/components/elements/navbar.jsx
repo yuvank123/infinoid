@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from 'react-router-dom';
+import { FaHeadset } from "react-icons/fa";
 import Logo from '../../../public/images/logo.webp';
 
 const Navbar = () => {
@@ -281,9 +282,8 @@ const Navbar = () => {
                     <a
                         href="https://calendly.com/infinoidtech/infinoid-technologies"
                         className="btn bg-gradient-to-r from-[#9058ff] to-[#b663ff] hover:from-[#9e68ff] hover:to-[#c172ff] text-white border-none hover:scale-[1.03] transition-transform shadow-lg hover:shadow-xl px-6 py-2 rounded-4xl"
-                    >
-                        <span className="material-symbols-outlined">
-                            support_agent
+                    > <span className='text-2xl'>
+                            <FaHeadset />
                         </span>
                         Schedule A Call
                     </a>

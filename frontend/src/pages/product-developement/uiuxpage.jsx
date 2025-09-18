@@ -1,7 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
-
-
+import React, { lazy } from 'react';
 import UIUX1 from '../../components/content/development/uiux/uiux1.jsx';
 
 // Lazy load remaining sections
@@ -16,40 +13,16 @@ const uiuxpage = () => {
       <div className="relative h-auto">
         <UIUX1 />
       </div>
-
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <UIUX2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <UIUX3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <UIUX4 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
+       <div className="relative h-auto">
+        <UIUX2 />
+      </div>
+       <div className="relative h-auto">
+        <UIUX3 />
+      </div>
+       <div className="relative h-auto">
+        <UIUX4 />
+      </div>
+      
     </div>
   );
 };

@@ -35,7 +35,7 @@ const Contact1 = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | MAPPETPLACE</title>
+        <title>Contact Us</title>
         <meta name="description" content="Contact the MAPPETPLACE team for collaborations, questions, and support." />
       </Helmet>
 

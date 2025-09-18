@@ -1,5 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
+import React, { lazy } from 'react';
 
 
 import ARVR1 from '../../components/content/AI-emerging-technologies/arvr-and-3Dmodelling/arvr1';
@@ -15,29 +14,13 @@ const arvr = () => {
       <div className="relative h-auto">
         <ARVR1 />
       </div>
-
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                < ARVR2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                < ARVR3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
+      <div className="relative h-auto">
+        <ARVR2 />
+      </div>
+      <div className="relative h-auto">
+        <ARVR3 />
+      </div>
+      
     </div>
   );
 };

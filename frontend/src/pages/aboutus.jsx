@@ -1,5 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
+import React, { lazy } from 'react';
 
 // About1 loads immediately (LCP-focused)
 import About1 from '../components/content/about/about1.jsx';
@@ -14,18 +13,10 @@ const Aboutus = () => {
       <div className="relative h-auto">
         <About1 />
       </div>
+       <div className="relative h-auto">
+        <About2 />
+      </div>
 
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto lg:h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <About2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
     </div>
   );
 };

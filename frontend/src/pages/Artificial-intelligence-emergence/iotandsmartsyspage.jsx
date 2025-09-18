@@ -1,6 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
-
+import React, { lazy } from 'react';
 
 import IoT1 from '../../components/content/AI-emerging-technologies/IOTandSmartSys/iot1';
 
@@ -15,29 +13,13 @@ const IoT = () => {
       <div className="relative h-auto">
         <IoT1 />
       </div>
+       <div className="relative h-auto">
+        <IoT2 />
+      </div>
+       <div className="relative h-auto">
+        <IoT3 />
+      </div>
 
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <IoT2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <IoT3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
     </div>
   );
 };

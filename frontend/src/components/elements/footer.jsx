@@ -336,7 +336,7 @@ const Footer = () => {
                                 {/* Social Media */}
                                 <div className="flex gap-3 pt-2">
                                     <a
-                                        href="https://www.linkedin.com/company/infinoid-technologies/?viewAsMember=true"
+                                        href="https://www.linkedin.com/company/infinoid-technologies-in/posts/?feedView=all"
                                         target="_blank"
                                         alt="Follow Infinoid Technologies on LinkedIn"
                                         aria-label="Infinoid Technologies on LinkedIn"

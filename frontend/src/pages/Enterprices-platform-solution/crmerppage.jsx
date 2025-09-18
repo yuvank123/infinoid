@@ -1,6 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
-
+import React, { lazy } from 'react';
 
 import CRMERP1 from '../../components/content/Enterprices & platform solution/CRM_and_ERP/crmanderp1';
 
@@ -15,29 +13,13 @@ const crmerppage = () => {
       <div className="relative h-auto">
         <CRMERP1 />
       </div>
+       <div className="relative h-auto">
+        <CRMERP2 />
+      </div>
+       <div className="relative h-auto">
+        <CRMERP3 />
+      </div>
 
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <CRMERP2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <CRMERP3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
     </div>
   );
 };

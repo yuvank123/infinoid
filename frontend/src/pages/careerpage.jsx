@@ -17,7 +17,7 @@ const careerpage = () => {
         <Career1 />
       </div>
 
-      <InView triggerOnce threshold={0.25}>
+      <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto lg:h-auto">
             {inView && (
@@ -29,7 +29,7 @@ const careerpage = () => {
         )}
       </InView>
 
-       <InView triggerOnce threshold={0.25}>
+       <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto lg:h-auto">
             {inView && (
@@ -41,7 +41,7 @@ const careerpage = () => {
         )}
       </InView>
 
-      <InView triggerOnce threshold={0.25}>
+      <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto lg:h-auto">
             {inView && (

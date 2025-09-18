@@ -1,6 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
-
+import React, { lazy } from 'react';
 
 import Mms1 from '../../components/content/cloud-devops-security/microservices-serverless-setup/mss1';
 
@@ -15,29 +13,13 @@ const mms = () => {
       <div className="relative h-auto">
         <Mms1 />
       </div>
+      <div className="relative h-auto">
+        <Mms2 />
+      </div>
+      <div className="relative h-auto">
+        <Mms3 />
+      </div>
 
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <Mms2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <Mms3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
     </div>
   );
 };

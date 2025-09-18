@@ -1,6 +1,4 @@
-import React, { Suspense, lazy } from 'react';
-import { InView } from 'react-intersection-observer';
-
+import React, {lazy } from 'react';
 
 import API1 from '../../components/content/development/apiintegration/api1';
 
@@ -11,33 +9,15 @@ const API3 = lazy(() => import('../../components/content/development/apiintegrat
 const apiintegrationpage = () => {
   return (
     <div className="bg-black text-white">
-    
       <div className="relative h-auto">
         <API1 />
       </div>
-
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <API2 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
-      <InView triggerOnce threshold={0.25}>
-        {({ inView, ref }) => (
-          <div ref={ref} className="relative h-auto">
-            {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-                <API3 />
-              </Suspense>
-            )}
-          </div>
-        )}
-      </InView>
+       <div className="relative h-auto">
+        <API2 />
+      </div>
+       <div className="relative h-auto">
+        <API3 />
+      </div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { InView } from 'react-intersection-observer';
+import RiseLoader from 'react-spinners/RiseLoader';
 
 // Home1 loads immediately (LCP-focused)
 import Home1 from '../components/content/homepage/home1.jsx';
@@ -20,11 +21,11 @@ const Homepage = () => {
       </div>
 
       {/* Lazy Sections – load only when in view */}
-      <InView triggerOnce threshold={0.25}>
+      <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-[60vh] lg:h-auto">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Home2 />
               </Suspense>
             )}
@@ -32,11 +33,11 @@ const Homepage = () => {
         )}
       </InView>
 
-      <InView triggerOnce threshold={0.25}>
+      <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Home3 />
               </Suspense>
             )}
@@ -44,11 +45,11 @@ const Homepage = () => {
         )}
       </InView>
 
-      <InView triggerOnce threshold={0.25}>
+      <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-screen">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Home4 />
               </Suspense>
             )}
@@ -56,11 +57,11 @@ const Homepage = () => {
         )}
       </InView>
 
-      <InView triggerOnce threshold={0.25}>
+      <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Home5 />
               </Suspense>
             )}
@@ -68,11 +69,11 @@ const Homepage = () => {
         )}
       </InView>
 
-      <InView triggerOnce threshold={0.25}>
+      <InView triggerOnce threshold={0.05}>
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Home6 />
               </Suspense>
             )}
