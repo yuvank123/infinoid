@@ -9,7 +9,7 @@ const Home1 = () => {
     <div className="relative w-full min-h-screen text-white overflow-hidden">
       {/* SEO Helmet Tags */}
       <Helmet>
-        <title>Innovative IT Solutions for Modern Businesses | infinoid</title>
+        <title>Innovative IT Solutions for Modern Businesses | infinoid technologies</title>
         <meta
           name="description"
           content="Empowering your digital growth with innovative IT services, including web development, cloud solutions, cybersecurity, and more."
@@ -26,7 +26,6 @@ const Home1 = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://infinoid.com/" />
-        <meta name="robots" content="index, follow" />
       </Helmet>
 
       {/* Background Visual */}

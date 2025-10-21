@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { InView } from 'react-intersection-observer';
+import RiseLoader from 'react-spinners/RiseLoader';
 
 
 import Policy1 from '../../components/content/privacypolicy/policy1.jsx';

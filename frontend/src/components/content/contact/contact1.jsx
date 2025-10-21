@@ -36,7 +36,7 @@ const Contact1 = () => {
     <>
       <Helmet>
         <title>Contact Us</title>
-        <meta name="description" content="Contact the MAPPETPLACE team for collaborations, questions, and support." />
+        <meta name="description" content="Contact the Infinoid Technologies team for collaborations, questions, and support." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-10 bg-gradient-to-br from-black to-[#1E0C3C] text-white relative overflow-hidden">
@@ -44,17 +44,15 @@ const Contact1 = () => {
         <div className="max-w-xl z-10 relative top-30 md:top-0 text-center md:text-left">
           <h1
             ref={headingRef}
-            className="text-4xl md:text-5xl font-semibold leading-tight mb-6"
+            className="text-6xl md:text-7xl font-bold mb-6"
           >
-            Get in <br />
-            <span className="text-white font-bold text-6xl md:text-8xl">Touch</span><br />
-            With Our Team
+            Get in Touch With Our Team
           </h1>
           <p
             ref={subHeadingRef}
             className="text-gray-300 text-lg md:text-xl mb-8"
           >
-            Whether you have a question, feedback, or a collaboration idea — we’d love to hear from you.
+            Whether you have a question, feedback, or a collaboration idea we’d love to hear from you.
           </p>
         </div>
 

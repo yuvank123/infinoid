@@ -78,10 +78,10 @@ const IoTSmartSystems = () => {
     return (
         <div className="w-full text-white">
             <Helmet>
-                <title>IoT & Smart Systems | Devices, Cloud & Security Stack</title>
+                <title>IoT & Smart Systems | Devices, Cloud Integration & Security</title>
                 <meta
                     name="description"
-                    content="Explore the IoT and Smart System ecosystem including hardware, communication protocols, cloud integration, and analytics tools."
+                    content="Discover complete IoT and Smart System solutions — from connected devices and communication protocols to cloud integration, data analytics, and secure system management."
                 />
             </Helmet>
 
@@ -114,7 +114,7 @@ const IoTSmartSystems = () => {
             </div>
 
             <div className="w-full flex justify-center px-4 py-10">
-                  <div className="w-full max-w-3xl p-8 bg-gradient-to-br from-purple-700 via-indigo-600 to-purple-800 rounded-3xl shadow-xl border border-white/10 relative overflow-hidden">
+                <div className="w-full max-w-3xl p-8 bg-gradient-to-br from-purple-700 via-indigo-600 to-purple-800 rounded-3xl shadow-xl border border-white/10 relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-indigo-700 blur-3xl opacity-20 animate-pulse z-0"></div>
                     <div className="relative z-10 text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

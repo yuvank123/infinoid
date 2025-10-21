@@ -169,7 +169,6 @@ const wmdev2 = () => {
   return (
     <>
       <Helmet>
-        <title>Web & Mobile Development Services</title>
         <meta
           name="description"
           content="Expert services for mobile app and web development tailored to your business goals."

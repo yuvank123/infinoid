@@ -7,29 +7,27 @@ const Career1 = () => {
     <div className="relative w-full min-h-screen overflow-hidden select-none">
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Talent Orbit | Careers at Infinoid Technologies</title>
+        <title>Talent Orbit | Open Tech Positions at Infinoid Technologies</title>
         <meta
           name="description"
-          content="Explore groundbreaking tech careers at Infinoid Technologies. Join a culture of innovation, growth, and transformation in AI and quantum computing."
+          content="Discover diverse career opportunities at Infinoid Technologies — from Frontend, Backend, and Full Stack Development to AI/ML, Cloud, DevOps, Cybersecurity, Data Science, Design, and Research. Join us in shaping the future of intelligent systems."
         />
-        <meta property="og:title" content="Talent Orbit | Infinoid Careers" />
-        <meta
-          property="og:description"
-          content="Join our constellation of innovators at Infinoid Technologies and redefine the future with quantum and AI."
-        />
-        <meta property="og:image" content="https://source.unsplash.com/featured/?technology,space" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/careers" />
       </Helmet>
 
+
       {/* Background Canvas */}
-      <div className="absolute inset-0 z-0">
-        <ElementbgCareer1 />
+      <div className="absolute inset-0 z-0 flex justify-center items-center bg-gradient-to-b from-gray-800 via-gray-300 to-gray-800">
+        {/* Outer Ring */}
+        <div className="w-96 h-96 rounded-full border-8 border-gray-400/30 flex justify-center items-center">
+          {/* Inner Circle */}
+          <div className="w-72 h-72 rounded-full border-4 border-gray-600/40"></div>
+        </div>
       </div>
+
 
       {/* Center Title */}
       <div className="relative z-10 flex flex-col justify-center items-center min-h-screen px-4 pointer-events-none -mt-10 md:mt-0">
-        <h1 className="text-6xl md:text-9xl text-transparent bg-clip-text bg-gradient-to-br from-gray-700 via-black to-gray-600 font-extrabold text-center unbounded">
+        <h1 className="text-6xl md:text-9xl text-transparent bg-clip-text bg-gradient-to-br from-gray-700 via-gray-900 to-gray-600 font-extrabold text-center unbounded">
           Talent Orbit
         </h1>
       </div>
@@ -52,11 +50,6 @@ const Career1 = () => {
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Interaction Tip */}
-      <div className="absolute bottom-3 md:left-8 z-30 text-xs md:text-sm text-black/60 pointer-events-none hidden sm:block">
-        Click + drag to rotate the background
       </div>
     </div>
   );

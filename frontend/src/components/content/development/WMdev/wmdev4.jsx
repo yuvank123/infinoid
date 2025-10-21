@@ -59,7 +59,6 @@ const MobileTechStackUI = () => {
   return (
     <>
       <Helmet>
-        <title>Mobile Tech Stack | Next-Gen Development</title>
         <meta
           name="description"
           content="Explore our mobile-first technology stack featuring Swift, Kotlin, Flutter, React Native, and Firebase to build high-performance applications."

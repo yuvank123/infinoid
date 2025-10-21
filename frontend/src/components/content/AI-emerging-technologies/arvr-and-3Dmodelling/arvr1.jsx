@@ -42,7 +42,7 @@ const ARVR3D = () => {
         <title>AR/VR & 3D Modelling Solutions</title>
         <meta
           name="description"
-          content="Create immersive AR/VR experiences and high-fidelity 3D models for training, simulation, marketing, and entertainment. We design the future of interaction."
+          content="Create immersive AR/VR experiences and high-fidelity 3D models for training, simulation and entertainment. We design the future of interaction."
         />
       </Helmet>
 

@@ -38,7 +38,11 @@ const Wmdev1 = () => {
   return (
     <>
       <Helmet>
-        <title>Responsive Device Showcase</title>
+        <title>Web & Mobile Development Services</title>
+        <meta
+          name="description"
+          content="Expert services for mobile app and web development tailored to your business goals."
+        />
       </Helmet>
 
       <div className="h-full lg:h-screen bg-black text-white px-6 md:px-10 py-20 flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden relative">
@@ -49,8 +53,8 @@ const Wmdev1 = () => {
             Experience seamless design across desktops and mobiles with modern, responsive interfaces.
           </p>
           <a
-          className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition"
-          href='/contact'
+            className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition"
+            href='/contact'
           >
             Get Started
           </a>

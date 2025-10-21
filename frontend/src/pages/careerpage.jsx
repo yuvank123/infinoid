@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { InView } from 'react-intersection-observer';
+import RiseLoader from 'react-spinners/RiseLoader';
 
 // career1 loads immediately (LCP-focused)
 import Career1 from '../components/content/career/career1.jsx';
@@ -21,7 +22,7 @@ const careerpage = () => {
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto lg:h-auto">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Career2 />
               </Suspense>
             )}
@@ -33,7 +34,7 @@ const careerpage = () => {
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto lg:h-auto">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Career3 />
               </Suspense>
             )}
@@ -45,7 +46,7 @@ const careerpage = () => {
         {({ inView, ref }) => (
           <div ref={ref} className="relative h-auto lg:h-auto">
             {inView && (
-              <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+              <Suspense fallback={<div className="text-center py-10"><RiseLoader color="#5c00a5" /></div>}>
                 <Career4 />
               </Suspense>
             )}

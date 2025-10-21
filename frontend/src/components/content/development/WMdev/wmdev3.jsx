@@ -114,7 +114,6 @@ const WebProcessWithMobileStack = () => {
     <div className="w-full text-white">
       {/*adding meta tags*/}
       <Helmet>
-        <title>Custom App & Web Development Stack | Full-Stack Services</title>
         <meta
           name="description"
           content="Explore our full-stack web and app development process. From mobile platforms and tools to web technologies and DevOps—built for performance and scalability."
@@ -124,10 +123,7 @@ const WebProcessWithMobileStack = () => {
           property="og:description"
           content="We build powerful, scalable apps and websites using modern stacks like React, Firebase, Node.js, Flutter, AWS, and more."
         />
-        <meta property="og:image" content="/images/2.webp" />
-        <meta property="og:type" content="website" />
         <meta name="keywords" content="Full-Stack, Web Development, App Development, React, Firebase, Flutter, Node.js, AWS, Mobile App Stack, DevOps, UI/UX Design" />
-        <meta name="author" content="YourCompanyName or Yuvank Goyal" />
       </Helmet>
       {/* Step 1: Web & App Process */}
       <div className="relative w-full min-h-screen flex flex-col items-center px-4 py-20">

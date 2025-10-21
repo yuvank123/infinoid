@@ -47,7 +47,7 @@ const Mapping = () => {
   return (
     <div className="w-full md:h-screen flex flex-col items-center justify-center relative px-4 md:px-8 h-[70vh] overflow-hidden">
       <Helmet>
-        <title>AI Network Topology Optimization | Infinoid</title>
+        <title>AI Network Topology Optimization | Infinoid Technologies</title>
         <meta name="description" content="Real-time topology visualization and smart path optimization using AI for scalable distributed systems." />
         <meta name="keywords" content="network mapping, AI optimization, dynamic routing, predictive path planning" />
       </Helmet>

@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import RiseLoader from 'react-spinners/RiseLoader';
 
 import Navbar from './components/elements/navbar.jsx';
 import Footers from './components/elements/footer.jsx';
@@ -149,7 +150,7 @@ const App = () => {
       <Navbar />
 
       <div className="flex-grow bg-black">
-        <Suspense fallback={<div className="text-center">Loading...</div>}>
+        <Suspense fallback={<div className="text-center"><RiseLoader color="#5c00a5" /></div>}>
           <ScrollToTop />
           <Routes>
             {List.map(({ path, component: Component }, index) => (
