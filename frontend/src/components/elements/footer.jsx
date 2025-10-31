@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
     FaBuilding,
     FaLinkedin,
-    FaTwitter,
     FaEnvelope,
     FaPhone,
     FaMapMarkerAlt,
@@ -30,6 +29,7 @@ import {
     FaGamepad,
     FaGlobe,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Logo from "../../../public/images/logo.webp";
 import Footerimage from "../../../public/images/footerimage.webp"
 
@@ -351,9 +351,9 @@ const Footer = () => {
                                         alt="Follow Infinoid Technologies on X (Twitter)"
                                         aria-label="Infinoid Technologies on X (Twitter)"
                                         rel="noopener noreferrer"
-                                        className="w-9 h-9 bg-gradient-to-r from-sky-500 to-sky-600 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
+                                        className="w-9 h-9 bg-gradient-to-r from-gray-800 to-gray-700 rounded-md flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
                                     >
-                                        <FaTwitter className="text-white text-sm" />
+                                        <FaXTwitter className="text-white text-sm" />
                                     </a>
                                 </div>
                             </div>
@@ -368,20 +368,6 @@ const Footer = () => {
                             <p className="text-xs text-gray-400">
                                 © {new Date().getFullYear()} Infinoid Technologies. All Rights Reserved.
                             </p>
-
-                            {/* Additional Links */}
-                            <nav
-                                aria-label="Footer navigation"
-                                className="flex items-center gap-5 text-xs"
-                            >
-                                <a
-                                    href="/privacy-policy"
-                                    title="Read our Privacy Policy"
-                                    className="text-gray-400 hover:text-blue-300 transition-colors"
-                                >
-                                    Privacy Policy
-                                </a>
-                            </nav>
                         </div>
                     </div>
                 </div>
