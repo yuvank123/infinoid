@@ -54,7 +54,7 @@ const OnlinePetShopCaseStudy = () => {
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technologies developed a robust online pet shop platform that brings pet lovers closer to quality pet products and services. This solution offers a seamless shopping experience with personalized recommendations, secure transactions, and efficient inventory management.
+            Infinoid Technologies pvt. ltd. developed a robust online pet shop platform that brings pet lovers closer to quality pet products and services. This solution offers a seamless shopping experience with personalized recommendations, secure transactions, and efficient inventory management.
           </p>
           <p className="text-xl italic text-purple-300">
             "Where pet care meets convenience — transforming the online pet shopping experience."
@@ -185,7 +185,7 @@ const OnlinePetShopCaseStudy = () => {
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-orange-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid Technologies?
+            🌟 Why Infinoid Technologies pvt. ltd.?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

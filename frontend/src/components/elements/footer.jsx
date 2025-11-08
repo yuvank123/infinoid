@@ -366,7 +366,7 @@ const Footer = () => {
                         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                             {/* Copyright */}
                             <p className="text-xs text-gray-400">
-                                © {new Date().getFullYear()} Infinoid Technologies. All Rights Reserved.
+                                © {new Date().getFullYear()} Infinoid Technologies pvt. ltd. All Rights Reserved.
                             </p>
                         </div>
                     </div>

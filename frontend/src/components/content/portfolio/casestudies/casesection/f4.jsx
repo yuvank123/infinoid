@@ -54,10 +54,10 @@ const PayrollManagementCaseStudy = () => {
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technologies developed a comprehensive Payroll Management System that automates payroll processing, ensures compliance with local regulations, and provides real-time financial insights. Designed for businesses of all sizes, this solution streamlines payroll operations while reducing errors and administrative overhead.
+            Infinoid Technologies pvt. ltd. developed a comprehensive Payroll Management System that automates payroll processing, ensures compliance with local regulations, and provides real-time financial insights. Designed for businesses of all sizes, this solution streamlines payroll operations while reducing errors and administrative overhead.
           </p>
           <p className="text-xl italic text-purple-300">
-            "Automate your payroll and empower your HR — Infinoid Technologies transforms payroll processing into a seamless experience."
+            "Automate your payroll and empower your HR — Infinoid Technologies pvt. ltd. transforms payroll processing into a seamless experience."
           </p>
         </div>
         {/* Overview Image */}
@@ -185,7 +185,7 @@ const PayrollManagementCaseStudy = () => {
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-purple-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid Technologies?
+            🌟 Why Infinoid Technologies pvt. ltd.?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

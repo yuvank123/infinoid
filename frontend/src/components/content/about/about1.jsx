@@ -108,7 +108,7 @@ const About1 = () => {
                         Reliable Technology, Real Results
                     </p>
                     <p className='text-lg sm:text-xl text-gray-400 mt-6 leading-relaxed max-w-4xl mx-auto'>
-                        Infinoid Technologies is a trusted technology solutions company delivering software that helps businesses run smoothly and grow steadily. We provide enterprise software, CRM, ERP, HRMS, payroll automation, visitor management, and custom web and mobile applications. Our experienced team focuses on practical solutions that simplify operations, improve efficiency, and support long-term business success.
+                        Infinoid Technologies pvt. ltd. is a trusted technology solutions company delivering software that helps businesses run smoothly and grow steadily. We provide enterprise software, CRM, ERP, HRMS, payroll automation, visitor management, and custom web and mobile applications. Our experienced team focuses on practical solutions that simplify operations, improve efficiency, and support long-term business success.
                     </p>
                 </motion.div>
             </div>

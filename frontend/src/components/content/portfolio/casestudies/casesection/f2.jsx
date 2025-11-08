@@ -54,10 +54,10 @@ const BusinessDashboardCaseStudy = () => {
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            In an era where data is the new oil, businesses need real-time, actionable insights to stay ahead. Infinoid Technologies partnered with a leading retail enterprise to design a fully dynamic business analytical dashboard that transforms raw data into revenue-driving decisions.
+            In an era where data is the new oil, businesses need real-time, actionable insights to stay ahead. Infinoid Technologies pvt. ltd. partnered with a leading retail enterprise to design a fully dynamic business analytical dashboard that transforms raw data into revenue-driving decisions.
           </p>
           <p className="text-xl italic text-purple-300">
-            "From scattered data to streamlined intelligence — Infinoid Technologies turns insights into impact."
+            "From scattered data to streamlined intelligence — Infinoid Technologies pvt. ltd. turns insights into impact."
           </p>
         </div>
         {/* Overview Image */}
@@ -185,7 +185,7 @@ const BusinessDashboardCaseStudy = () => {
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-red-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid Technologies?
+            🌟 Why Infinoid Technologies pvt. ltd.?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

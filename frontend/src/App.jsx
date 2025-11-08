@@ -133,6 +133,10 @@ const List = [
     component: lazy(() => import('./pages/caseStudies/caseSection/first9.jsx')),
   },
   {
+    path: '/case-studies/portfolio10',
+    component: lazy(() => import('./pages/caseStudies/caseSection/first10.jsx')),
+  },
+  {
     path: '/clients',
     component: lazy(() => import('./pages/ourclient/ourclientpage.jsx')),
   },

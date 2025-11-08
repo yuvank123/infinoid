@@ -1,48 +1,83 @@
 import React from 'react';
-import { FiServer, FiCpu, FiCloud, FiTool, FiShoppingCart, FiBox, FiClipboard, FiTruck, FiDatabase, FiActivity, FiSettings } from 'react-icons/fi';
-import OverviewImg5 from '../../../../../../public/images/port5.webp'
+import { FiMessageSquare, FiUsers, FiDatabase, FiZap, FiLock, FiBarChart2 } from 'react-icons/fi';
 
 const stack = [
   {
-    title: "Stock Management",
-    icon: FiBox,
-    items: ["Real-Time Stock Levels", "Batch Tracking", "Low Stock Alerts", "SKU Management", "Barcode Scanning"]
+    title: "Message Automation",
+    icon: FiMessageSquare,
+    items: [
+      "Auto-reply & Smart Response Engine",
+      "Keyword-based Message Triggers",
+      "Bulk & Scheduled Messaging",
+      "Personalized Templates",
+      "File & Media Attachments"
+    ]
   },
   {
-    title: "Order Management",
-    icon: FiClipboard,
-    items: ["Purchase Orders", "Sales Orders", "Order Status Tracking", "Returns Handling", "Auto Reordering"]
+    title: "Customer Engagement",
+    icon: FiUsers,
+    items: [
+      "Welcome & Onboarding Messages",
+      "Broadcast Lists with Filters",
+      "Interactive Button Messages",
+      "Follow-up & Feedback Campaigns",
+      "Contact Segmentation"
+    ]
   },
   {
-    title: "Supplier & Vendor",
-    icon: FiTruck,
-    items: ["Vendor Profiles", "Supplier Contracts", "Procurement Logs", "Delivery Scheduling", "Rating & Feedback"]
-  },
-  {
-    title: "Data & Reporting",
+    title: "Data & CRM Integration",
     icon: FiDatabase,
-    items: ["Inventory Valuation", "Stock Movement Reports", "Dead Stock Identification", "Custom Filters", "CSV/Excel Export"]
+    items: [
+      "CRM Sync (HubSpot, Zoho, etc.)",
+      "Google Sheets Integration",
+      "Real-time Lead Capture",
+      "Webhook Support",
+      "API-based Data Flow"
+    ]
   },
   {
-    title: "Performance Analytics",
-    icon: FiActivity,
-    items: ["Turnover Ratio", "Demand Forecasting", "Inventory KPIs", "Restock Timing", "Real-Time Dashboards"]
+    title: "Performance & Analytics",
+    icon: FiBarChart2,
+    items: [
+      "Campaign Insights Dashboard",
+      "Open & Response Rate Tracking",
+      "Conversion Analysis",
+      "Exportable Reports",
+      "Contact Growth Metrics"
+    ]
   },
   {
-    title: "System Configuration",
-    icon: FiSettings,
-    items: ["Warehouse Setup", "Multi-Location Support", "User Access Control", "Notification Rules", "API Integrations"]
+    title: "Automation & Workflows",
+    icon: FiZap,
+    items: [
+      "Rule-based Message Flow",
+      "Chatbot Builder",
+      "Multi-Agent Routing",
+      "Trigger on Form Submission",
+      "Auto Follow-up Scheduling"
+    ]
+  },
+  {
+    title: "Security & Compliance",
+    icon: FiLock,
+    items: [
+      "Verified WhatsApp API Integration",
+      "End-to-End Encryption",
+      "Secure Webhooks",
+      "Opt-In Consent Handling",
+      "Audit Logging"
+    ]
   }
 ];
 
-const InventoryManagementCaseStudy = () => {
+const WhatsAppAutomationCaseStudy = () => {
   return (
     <div className="min-h-screen text-gray-100 mt-25">
       {/* Hero Section */}
       <section className="relative py-15 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
           <h1 className="mt-12 text-4xl md:text-7xl font-bold bg-gradient-to-r p-2 lato-900 from-purple-400 via-purple-300 to-purple-500 bg-clip-text text-transparent">
-            Inventory Management System
+            WhatsApp Automation System
           </h1>
         </div>
       </section>
@@ -50,53 +85,45 @@ const InventoryManagementCaseStudy = () => {
       {/* Overview Section */}
       <section className="py-5 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-purple-200 bg-clip-text text-transparent mb-8">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-purple-200 bg-clip-text text-transparent mb-8">
             Overview
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed mb-4">
-            Infinoid Technologies pvt. ltd. developed a comprehensive Inventory Management System that provides real-time tracking of stock levels, automates restocking processes, and optimizes supply chain operations. Designed for scalability, this solution streamlines operations, reduces manual errors, and enhances business efficiency.
+            Infinoid Technologies Pvt. Ltd. developed a robust WhatsApp Automation System to help businesses streamline communication, manage customer interactions, and drive engagement — all from a single dashboard. The platform automates repetitive chat flows and integrates with CRMs for smart lead handling.
           </p>
           <p className="text-xl italic text-purple-300">
-            "Transform your inventory into a strategic asset — Infinoid Technologies pvt. ltd. redefines supply chain management."
+            “Automate conversations, build trust, and scale communication effortlessly.”
           </p>
-        </div>
-        {/* Overview Image */}
-        <div className="flex justify-center mt-20">
-          <img
-            src={OverviewImg5}
-            alt="AR/VR Overview"
-            className="rounded-2xl w-full max-w-4xl"
-          />
         </div>
       </section>
 
       {/* Challenges Section */}
       <section className="py-16 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-red-400 to-purple-300 bg-clip-text text-transparent mb-8">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-red-400 to-orange-300 bg-clip-text text-transparent mb-8">
             ❌ Challenges Faced
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               {
-                title: "Fragmented Inventory Data",
-                content: "Data was siloed across multiple channels, making it difficult to get a unified view of stock levels.",
-                icon: <FiServer className="text-2xl text-red-400" />
+                title: "Manual Customer Replies",
+                content: "Handling hundreds of daily queries manually slowed down response times.",
+                icon: <FiMessageSquare className="text-2xl text-green-400" />
               },
               {
-                title: "Manual Tracking Inefficiencies",
-                content: "Reliance on spreadsheets led to errors and delayed responses in restocking.",
-                icon: <FiTool className="text-2xl text-purple-400" />
+                title: "No Centralized Lead Data",
+                content: "Important customer information was scattered across multiple platforms.",
+                icon: <FiDatabase className="text-2xl text-blue-400" />
               },
               {
-                title: "Stockouts & Overstock Issues",
-                content: "Inaccurate forecasting resulted in either shortages or excess inventory, impacting cash flow.",
-                icon: <FiShoppingCart className="text-2xl text-blue-400" />
+                title: "Low Engagement",
+                content: "Missed opportunities due to delayed follow-ups and lack of automation.",
+                icon: <FiUsers className="text-2xl text-yellow-400" />
               },
               {
-                title: "Complex Multi-Channel Integration",
-                content: "Integrating sales data from various channels posed significant technical challenges.",
-                icon: <FiCpu className="text-2xl text-red-400" />
+                title: "Security Concerns",
+                content: "Unverified message tools posed risks to customer data and compliance.",
+                icon: <FiLock className="text-2xl text-red-400" />
               }
             ].map((item, index) => (
               <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
@@ -114,15 +141,15 @@ const InventoryManagementCaseStudy = () => {
       {/* Implemented Solutions Section */}
       <section className="py-16 px-6 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-blue-200 bg-clip-text text-transparent mb-8">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-purple-200 bg-clip-text text-transparent mb-8">
             ✅ Implemented Solutions
           </h2>
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               {[
-                "Real-time inventory tracking with integrated IoT sensors",
-                "Automated restocking alerts and order processing",
-                "Unified dashboard consolidating multi-channel data"
+                "Developed verified WhatsApp API integration for business messaging",
+                "Added chatbot with keyword-based automation for instant replies",
+                "Enabled campaign scheduling and customer segmentation"
               ].map((item, index) => (
                 <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
                   <div className="border-l-4 border-purple-400 pl-4">
@@ -133,12 +160,12 @@ const InventoryManagementCaseStudy = () => {
             </div>
             <div className="space-y-8">
               {[
-                "Advanced analytics for accurate demand forecasting",
-                "Seamless integration with ERP and eCommerce platforms",
-                "Cloud-based deployment for scalability and high availability"
+                "Integrated CRM sync for real-time lead management",
+                "Analytics dashboard for engagement and message tracking",
+                "End-to-end encryption for secure and compliant communication"
               ].map((item, index) => (
                 <div key={index} className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl border border-white/10">
-                  <div className="border-l-4 border-blue-400 pl-4">
+                  <div className="border-l-4 border-purple-400 pl-4">
                     <p className="text-gray-300">{item}</p>
                   </div>
                 </div>
@@ -184,29 +211,29 @@ const InventoryManagementCaseStudy = () => {
       {/* Why Choose Infinoid Section */}
       <section className="py-16 px-6 lg:px-24 mb-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-purple-200 bg-clip-text text-transparent mb-12">
-            🌟 Why Infinoid Technologies pvt. ltd.?
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-300 to-purple-200 bg-clip-text text-transparent mb-12">
+            🌟 Why Infinoid Technologies Pvt. Ltd.?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Unified Visibility",
-                content: "Get a holistic view of your inventory across all channels in real time."
+                title: "Faster Response Time",
+                content: "AI-driven replies reduce response delay by up to 80%."
               },
               {
-                title: "Operational Efficiency",
-                content: "Automate routine tasks and reduce manual errors, saving time and resources."
+                title: "Improved Engagement",
+                content: "Campaign automation keeps leads active and nurtured."
               },
               {
-                title: "Scalable & Flexible",
-                content: "Our cloud-based solution grows with your business, handling increased load effortlessly."
+                title: "Data Security",
+                content: "Built with verified WhatsApp Business API and encryption."
               },
               {
-                title: "Actionable Insights",
-                content: "Advanced analytics and forecasting empower smarter, data-driven decisions."
+                title: "Scalable Architecture",
+                content: "Handles thousands of chats and broadcasts efficiently."
               }
             ].map((item, index) => (
-              <div key={index} className="bg-gradient-to-br from-blue-500 to-purple-500 p-px rounded-2xl">
+              <div key={index} className="bg-gradient-to-br from-purple-500 to-purple-400 p-px rounded-2xl">
                 <div className="bg-gray-900 rounded-2xl p-6 h-full">
                   <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                   <p className="text-gray-300">{item.content}</p>
@@ -220,4 +247,4 @@ const InventoryManagementCaseStudy = () => {
   );
 };
 
-export default InventoryManagementCaseStudy;
+export default WhatsAppAutomationCaseStudy;

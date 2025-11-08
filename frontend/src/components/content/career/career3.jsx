@@ -92,7 +92,7 @@ const Career = () => {
   return (
     <div className="bg-black min-h-auto text-white px-4 py-20 relative">
       <Helmet>
-        <title>Careers at Infinoid | Join Our Team</title>
+        <title>Careers at Infinoid Technologies pvt. ltd. | Join Our Team</title>
         <meta name="description" content="Explore career opportunities at Infinoid. Join us in shaping the future of technology." />
       </Helmet>
 

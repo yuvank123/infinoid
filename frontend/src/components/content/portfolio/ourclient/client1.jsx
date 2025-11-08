@@ -11,8 +11,11 @@ import C9 from "../../../../../public/images/revup.webp";
 import C10 from "../../../../../public/images/fmpg.webp";
 import C11 from "../../../../../public/images/aaram.webp";
 import C12 from "../../../../../public/images/rangmahal.webp";
+import C13 from "../../../../../public/images/hoverrobotix.webp";
+import C14 from "../../../../../public/images/frontline.webp";
+import C15 from "../../../../../public/images/startforce.webp";
 
-const logos = [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12];
+const logos = [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15];
 
 const ImageGrid = () => {
   const [isPaused, setIsPaused] = useState(false);

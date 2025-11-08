@@ -8,42 +8,42 @@ const testimonials = [
     name: 'Dr.Munish Jindal',
     title: 'Founding President : MentorX',
     quote:
-      'Infinoid Technologies turned our concept into a polished digital experience with exceptional UI/UX design. They maintained excellent communication and handled every detail with care. Their responsiveness and commitment stood out. From idea to execution, it truly felt like a seamless, collaborative partnership.',
+      'Infinoid Technologies pvt. ltd. turned our concept into a polished digital experience with exceptional UI/UX design. They maintained excellent communication and handled every detail with care. Their responsiveness and commitment stood out. From idea to execution, it truly felt like a seamless, collaborative partnership.',
     img: '/images/t2.webp',
   },
   {
     name: 'Vivek Kumar',
     title: 'Founder & CTO, FMPG',
     quote:
-      'We initially approached Infinoid Technologies for their competitive pricing, but the quality of their work is what made us stay. They never compromised on creativity or timelines. The team\'s dedication, clean design choices, and proactive suggestions made our startup journey smooth and successful.',
+      'We initially approached Infinoid Technologies pvt. ltd. for their competitive pricing, but the quality of their work is what made us stay. They never compromised on creativity or timelines. The team\'s dedication, clean design choices, and proactive suggestions made our startup journey smooth and successful.',
     img: '/images/t3.webp',
   },
   {
     name: 'Rajeev Kumar',
     title: 'ARD Secure Facility Management LLP',
     quote:
-      'Working with Infinoid Technologies felt like having an in-house tech team. Their ability to adapt quickly, handle changes on the fly, and maintain quality was outstanding. The development cycle was smooth, the communication clear, and the final product exceeded our expectations in every way.',
+      'Working with Infinoid Technologies pvt. ltd. felt like having an in-house tech team. Their ability to adapt quickly, handle changes on the fly, and maintain quality was outstanding. The development cycle was smooth, the communication clear, and the final product exceeded our expectations in every way.',
     img: '/images/t1.webp',
   },
   {
     name: 'Dr.Nancy Juneja',
     title: 'Founder : Revup Skills',
     quote:
-      'The team at Infinoid Technologies truly exceeded expectations. Their sense of design, fast turnaround, and openness to ideas made the entire process enjoyable. Their professionalism and creativity came through in every discussion. It was a pleasure to collaborate with such a skilled group.',
+      'The team at Infinoid Technologies pvt. ltd. truly exceeded expectations. Their sense of design, fast turnaround, and openness to ideas made the entire process enjoyable. Their professionalism and creativity came through in every discussion. It was a pleasure to collaborate with such a skilled group.',
     img: '/images/t4.webp',
   },
   {
     name: 'Kapil Jain',
     title: 'Founder & CEO, K.S.Jain & Co.',
     quote:
-      "Infinoid Technologies team was always available, even on short notice. Their consistent support, attention to detail, and patience stood out. From initial discussions to final deployment, they ensured everything was smooth, stress-free, and built exactly as envisioned. We couldn't ask for more.",
+      "Infinoid Technologies pvt. ltd. team was always available, even on short notice. Their consistent support, attention to detail, and patience stood out. From initial discussions to final deployment, they ensured everything was smooth, stress-free, and built exactly as envisioned. We couldn't ask for more.",
     img: '/images/t5.webp',
   },
   {
     name: 'Vishnu Chandran CS',
     title: 'Managing Director, 360 DEGREE SIMS PVT. LTD.',
     quote:
-      'We trusted Infinoid Technologies with our Payroll Management System and were impressed with their professionalism. They delivered a modern UI and automated features that worked flawlessly. Their team was detail-oriented, responsive, and added real value to our operations from day one.',
+      'We trusted Infinoid Technologies pvt. ltd. with our Payroll Management System and were impressed with their professionalism. They delivered a modern UI and automated features that worked flawlessly. Their team was detail-oriented, responsive, and added real value to our operations from day one.',
     img: '/images/t6.webp',
   },
 ];
@@ -52,7 +52,7 @@ const Testimonial = () => {
   return (
     <>
       <Helmet>
-        <title>Client Testimonials | Infinoid</title>
+        <title>Client Testimonials | Infinoid Technologies pvt. ltd.</title>
         <meta
           name="description"
           content="Hear what our clients say about working with Infinoid Technologies."

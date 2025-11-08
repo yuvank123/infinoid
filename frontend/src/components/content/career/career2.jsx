@@ -8,7 +8,7 @@ const Career2 = () => {
         "Discover Technology": {
             title: "Explore Tech Frontiers",
             content:
-                "At Infinoid Technologies, we foster a culture of innovation, collaboration, and growth. Our experts lead the way in AI, cloud computing, and software development, delivering cutting-edge digital solutions. We hire top tech talent and provide unparalleled opportunities to shape the future of technology. Join us to work on pioneering projects and accelerate your professional growth in a dynamic, future-ready environment.",
+                "At Infinoid Technologies pvt. ltd, we foster a culture of innovation, collaboration, and growth. Our experts lead the way in AI, cloud computing, and software development, delivering cutting-edge digital solutions. We hire top tech talent and provide unparalleled opportunities to shape the future of technology. Join us to work on pioneering projects and accelerate your professional growth in a dynamic, future-ready environment.",
             image: "https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b2ZmaWNlfGVufDB8fDB8fHww",
         },
         "Ace Your Career": {
@@ -29,7 +29,7 @@ const Career2 = () => {
         <div className="relative min-h-screen flex flex-col items-center justify-center px-4 md:px-8 lg:px-16 text-white overflow-hidden">
             {/* Helmet for SEO */}
             <Helmet>
-                <title>Careers at Infinoid Technologies | Shape Your Success</title>
+                <title>Careers at Infinoid Technologies pvt. ltd. | Shape Your Success</title>
                 <meta
                     name="description"
                     content="Explore tech opportunities, internships, and career acceleration with Infinoid Technologies. Shape your success with top industry leaders."

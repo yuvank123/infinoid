@@ -7,7 +7,7 @@ const Career1 = () => {
     <div className="relative w-full min-h-screen overflow-hidden select-none">
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Talent Orbit | Open Tech Positions at Infinoid Technologies</title>
+        <title>Talent Orbit | Open Tech Positions at Infinoid Technologies pvt. ltd.</title>
         <meta
           name="description"
           content="Discover diverse career opportunities at Infinoid Technologies — from Frontend, Backend, and Full Stack Development to AI/ML, Cloud, DevOps, Cybersecurity, Data Science, Design, and Research. Join us in shaping the future of intelligent systems."
@@ -37,17 +37,11 @@ const Career1 = () => {
         <div className="pointer-events-auto">
           <div className="backdrop-blur-sm px-6 py-4 rounded-xl">
             <h2 className="text-lg md:text-xl font-semibold text-black mb-3">
-              At Infinoid Technologies
+              At Infinoid Technologies pvt. ltd.
             </h2>
             <p className="text-sm md:text-base text-black/80 mb-4 leading-relaxed">
-              Join our constellation of innovators where quantum computing meets AI frontiers.
+              Join our constellation of innovators transforming ideas into intelligent IT solutions.
             </p>
-            <a
-              href="#"
-              className="inline-block px-5 py-2.5 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition"
-            >
-              Launch Your Odyssey →
-            </a>
           </div>
         </div>
       </div>

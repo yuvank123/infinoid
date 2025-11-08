@@ -80,6 +80,12 @@ const AboutUs = () => {
       link: "https://diriseapp.com/",
       subtitle: "E-commerce for All Products",
       description: "Diriseapp is an online platform that offers a wide range of products from different categories in one place, allowing customers to find and buy items without moving between multiple websites."
+    },
+    {
+      title: "WhatsApp Automation System",
+      link: "/case-studies/portfolio10",
+      subtitle: "Automate Communication & Customer Engagement",
+      description: "The WhatsApp Automation System enables businesses to streamline customer interactions through automated messages, chatbots, and scheduled broadcasts. It supports smart replies, bulk messaging, and integration with CRM systems to improve engagement and save time."
     }
 
   ];
