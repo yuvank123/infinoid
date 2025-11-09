@@ -83,7 +83,7 @@ try {
         }
 
         // Send email (optional)
-        $to = "yuvankgoyal875@gmail.com";
+        $to = "info@infinoid.com";
         $subject = "New Job Application for $position";
         $emailMessage = "
 Position: $position

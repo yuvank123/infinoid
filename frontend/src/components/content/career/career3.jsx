@@ -10,12 +10,16 @@ const Career = () => {
   const [status, setStatus] = useState({ loading: false, success: false, error: null });
 
   const positions = [
-    { title: "Salesforce Developer", experience: "Experience: 0-3 Years", skills: ["Aura", "LWC", "Flow", "Apex", "VSCode"] },
-    { title: "Project Coordinator", experience: "Experience: 1-5 Years", skills: ["Project Management", "Communication", "Problem-Solving", "Docs", "Conflict Resolution"] },
-    { title: "React Developer", experience: "Experience: 2-6 Years", skills: ["React.js", "Redux", "JavaScript", "CSS", "Git"] },
-    { title: "Python Developer", experience: "Experience: 1-4 Years", skills: ["Django", "Flask", "SQL", "REST API", "Git"] },
-    { title: "Data Scientist", experience: "Experience: 2-5 Years", skills: ["Python", "Machine Learning", "Deep Learning", "SQL", "Pandas"] },
-    { title: "Full Stack Developer", experience: "Experience: Fresher", skills: ["Node.js", "React.js", "MongoDB", "Express.js", "Docker"] },
+    {
+      title: "Salesforce Developer",
+      experience: "Experience: 0-3 Years",
+      skills: ["Aura", "LWC", "Flow", "Apex", "VSCode"]
+    },
+    {
+      title: "Full Stack Developer",
+      experience: "Experience: Fresher",
+      skills: ["Node.js", "React.js", "MongoDB", "Express.js", "Docker"]
+    }
   ];
 
   const openModal = (role) => {
