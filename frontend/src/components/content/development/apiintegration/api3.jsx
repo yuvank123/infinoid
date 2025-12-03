@@ -101,7 +101,7 @@ const APIIntegrationStack = () => {
                 <div className="w-full flex flex-col items-center gap-6 mt-10">
                     <div className="flex flex-row justify-center items-center gap-5">
                         <div className="rounded-full bg-yellow-600 text-white text-3xl h-[50px] w-[50px] flex justify-center items-center">1</div>
-                        <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-3xl">Design Process</span>
+                        <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-2xl">Process</span>
                     </div>
                     <img
                         src={Trackpng}
@@ -113,9 +113,9 @@ const APIIntegrationStack = () => {
 
             <div className="w-full min-h-screen py-10 px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-center items-center mb-10 gap-4">
-                    <div className="rounded-full bg-yellow-500 text-white text-3xl h-[50px] w-[50px] flex justify-center items-center">1</div>
+                    <div className="rounded-full bg-yellow-500 text-white text-3xl h-[50px] w-[50px] flex justify-center items-center">2</div>
                     <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-2xl md:text-3xl">
-                        API Integration Stack
+                        API Stack
                     </span>
                 </div>
                 {renderCategoryGrid(apiStack)}

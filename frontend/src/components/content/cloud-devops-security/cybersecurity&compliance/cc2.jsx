@@ -120,7 +120,7 @@ const CybersecurityCompliance = () => {
         </div>
 
         <div className="max-w-7xl mx-auto relative py-12">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent text-center mb-8 unbounded">
+          <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent text-center mb-8 unbounded">
             Cybersecurity & Compliance
           </h1>
           <p className="text-gray-400 text-center max-w-2xl mx-auto mb-12 text-lg">

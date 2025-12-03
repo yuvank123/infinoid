@@ -69,7 +69,7 @@ const Uiux1 = () => {
           <div className="flex-1 text-center md:text-left space-y-6">
             <h1
               ref={headingRef}
-              className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent unbounded"
+              className="text-3xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent unbounded"
             >
               Revolutionizing <span className="text-purple-300">Digital UI/UX</span> Experiences
             </h1>

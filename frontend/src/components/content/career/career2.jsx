@@ -14,7 +14,7 @@ const Career2 = () => {
         "Ace Your Career": {
             title: "Accelerate Your Growth",
             content:
-                "If you're driven by innovation and excellence in technology, Infinoid Technologies offers the perfect platform to elevate your career. We provide top-tier full-time job opportunities that propel your professional journey forward. Join us to collaborate with industry leaders, work on groundbreaking projects, and make a lasting impact on global businesses.",
+                "If you're driven by innovation and excellence in technology, Infinoid Technologies pvt. ltd offers the perfect platform to elevate your career. We provide top-tier full-time job opportunities that propel your professional journey forward. Join us to collaborate with industry leaders, work on groundbreaking projects, and make a lasting impact on global businesses.",
             image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D",
         },
         "Train with Professionals": {

@@ -76,7 +76,7 @@ const CloudArchitecture1 = () => {
                             ref={paraRef}
                             className="text-xl sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto md:mx-0"
                         >
-                            Architect cloud-native systems optimized for performance, availability, and security. Whether it's microservices, containers, or hybrid clouds — we plan for scale.
+                            Architect cloud-native systems optimized for performance, availability, and security. Whether it's microservices, containers, or hybrid clouds, we plan for scale.
                         </p>
 
                         <a

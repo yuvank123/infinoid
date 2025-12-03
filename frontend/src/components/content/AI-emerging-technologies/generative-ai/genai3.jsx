@@ -86,9 +86,9 @@ const GenAIChatbots = () => {
             </Helmet>
 
             <div className="relative w-full min-h-screen flex flex-col items-center px-4 py-20">
-                <div className="text-center mb-12 max-w-4xl">
-                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-4 unbounded leading-15">
-                        Intelligent Chatbots & <span className="px-4 rounded-full bg-gradient-to-br from-purple-500 via-purple-400 to-purple-500 text-white">Generative AI</span>
+                <div className="text-center mb-12 max-w-3xl">
+                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-4 unbounded leading-13">
+                        Intelligent <span className="px-4 rounded-full bg-gradient-to-br from-purple-500 via-purple-400 to-purple-500 text-white">Chatbots</span> & Gen AI
                     </h1>
                     <p className="text-lg text-gray-300">
                         Deliver powerful, natural conversations and creative output with cutting-edge AI tools and frameworks.

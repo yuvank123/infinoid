@@ -87,7 +87,7 @@ const Blockchain = () => {
 
             <div className="relative w-full min-h-screen flex flex-col items-center px-4 py-20">
                 <div className="text-center mb-12 max-w-4xl">
-                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-4 unbounded leading-15">
+                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-4 unbounded leading-12">
                         Decentralized <span className="px-4 rounded-full bg-gradient-to-br from-purple-500 via-purple-400 to-purple-500 text-white">Blockchain</span> Ecosystems
                     </h1>
                     <p className="text-lg text-gray-300">
@@ -107,7 +107,7 @@ const Blockchain = () => {
             <div className="w-full min-h-screen py-10 px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-center items-center mb-10 gap-4">
                     <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-2xl md:text-3xl">
-                        Blockchain Technology Stack
+                        Blockchain Stack
                     </span>
                 </div>
                 {renderCategoryGrid(blockchainStack)}

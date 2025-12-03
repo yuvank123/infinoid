@@ -176,7 +176,7 @@ const VmsSection = () => {
           {/* VMS Software Section */}
           <div className="flex flex-col justify-center items-center">
             <h3 className="text-xl font-semibold mb-4 text-black unbounded bg-gradient-to-br from-gray-500 via-white to-gray-300 px-4 py-2 rounded-full">
-              VMS Software Features
+              VMS Features
             </h3>
             {renderCards(vmsSoftwareServices, selectedSoftware, setSelectedSoftware)}
           </div>

@@ -93,7 +93,7 @@ const CRMERPIntegrationStack = () => {
             {/* 🔹 Hero Section */}
             <div className="relative w-full flex flex-col items-center px-4 py-20">
                 <div className="text-center mb-12 max-w-5xl">
-                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-4 unbounded p-2">
+                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 bg-clip-text text-transparent mb-4 unbounded p-2 leading-12 md-leading-0">
                         Unified <span className="px-4 rounded-full bg-gradient-to-br from-purple-500 via-purple-400 to-purple-500 text-white">CRM</span> & <span className="px-4 rounded-full bg-gradient-to-br from-purple-500 via-purple-400 to-purple-500 text-white">ERP</span> Systems
                     </h1>
                     <p className="text-lg text-gray-300">
@@ -108,7 +108,7 @@ const CRMERPIntegrationStack = () => {
                 <div className="w-full flex flex-col items-center gap-6 mt-10">
                     <div className="flex flex-row justify-center items-center gap-5">
                         <div className="rounded-full bg-red-600 text-white text-3xl h-[50px] w-[50px] flex justify-center items-center">1</div>
-                        <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-2xl md:text-3xl">Workflow Overview</span>
+                        <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-2xl md:text-3xl">Process</span>
                     </div>
                     <img
                         src={Trackpng}
@@ -123,7 +123,7 @@ const CRMERPIntegrationStack = () => {
                 <div className="flex justify-center items-center mb-10 gap-4">
                     <div className="rounded-full bg-pink-500 text-white text-3xl h-[50px] w-[50px] flex justify-center items-center">2</div>
                     <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-2xl md:text-3xl">
-                        CRM Integration Stack
+                        CRM Stack
                     </span>
                 </div>
                 {renderStackGrid(crmStack)}
@@ -138,7 +138,7 @@ const CRMERPIntegrationStack = () => {
                 <div className="flex justify-center items-center mb-10 gap-4">
                     <div className="rounded-full bg-green-500 text-white text-3xl h-[50px] w-[50px] flex justify-center items-center">3</div>
                     <span className="px-4 py-2 rounded-full bg-gradient-to-br from-gray-500 via-white to-gray-500 text-black text-2xl md:text-3xl">
-                        ERP Integration Stack
+                        ERP Stack
                     </span>
                 </div>
                 {renderStackGrid(erpStack)}
